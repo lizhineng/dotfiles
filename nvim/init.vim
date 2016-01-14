@@ -16,12 +16,13 @@
 
 " utilities
   Plug 'bling/vim-airline'
-  Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-  Plug 'ryanoasis/vim-devicons'
   Plug 'tpope/vim-surround'
   Plug 'tomtom/tcomment_vim'
   Plug 'Chiel92/vim-autoformat'
   Plug 'gorodinskiy/vim-coloresque'
+  Plug 'Shougo/unite.vim'
+  Plug 'Shougo/unite-outline'
+  Plug 'Shougo/vimfiler' | Plug 'ryanoasis/vim-devicons'
 
 " auto completion
   Plug 'Shougo/deoplete.nvim'
@@ -32,10 +33,11 @@
   Plug 'honza/vim-snippets'
 
 " front-end related
-  Plug 'mattn/emmet-vim'
-  Plug 'othree/html5.vim'
-  Plug 'hail2u/vim-css3-syntax'
-  Plug 'cakebaker/scss-syntax.vim'
+  Plug 'mattn/emmet-vim', { 'for': 'html' }
+  Plug 'gregsexton/MatchTag', { 'for': 'html' }
+  Plug 'othree/html5.vim', { 'for': 'html' }
+  Plug 'hail2u/vim-css3-syntax', { 'for': 'css' }
+  Plug 'cakebaker/scss-syntax.vim', { 'for': 'scss' }
   Plug 'KabbAmine/gulp-vim'
 
 " Add plugins to &runtimepath
@@ -72,9 +74,11 @@
 
   syntax enable
   colorscheme solarized
+  set guifont=Droid\ Sans\ Mono\ for\ Powerline:h11
   set laststatus=2
   set tabstop=2 shiftwidth=2 expandtab
   set relativenumber number
+  set encoding=utf-8
 
 " change the terminal's title
   set title
@@ -94,7 +98,7 @@
   set pastetoggle=<f6>
 
 " NERDTree
-  map <c-\> :NERDTreeToggle<cr>
+  map <c-\> :VimFilerExplorer<cr>
 
 " TComment
   vnoremap <c-/> :TComment<cr>
@@ -131,43 +135,10 @@
               " center buffer around cursor when opening files
   autocmd BufRead * normal zz
 
-" auto reload the VIM's configration after saving
-  au FileType vim autocmd! bufwritepost init.vim source %
-
 " }}}
 
 
 " Plugins Settings {{{
-
-" ---
-" NERDTreee
-"
-  autocmd StdinReadPre * let s:std_in=1
-  let NERDTreeShowHidden=1
-  let NERDTreeWinSize=30
-  let NERDTreeIgnore = ['\.pyc$', '__pycache__', '.DS_Store']
-  let g:NERDTreeAutoDeleteBuffer=1
-
-" NERDTress File highlighting
-  function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
-    exec 'autocmd FileType nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
-    exec 'autocmd FileType nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
-  endfunction
-
-  call NERDTreeHighlightFile('jade', 'green', 'none', 'green', 'none')
-  call NERDTreeHighlightFile('md', 'blue', 'none', '#6699CC', 'none')
-  call NERDTreeHighlightFile('config', 'yellow', 'none', '#d8a235', 'none')
-  call NERDTreeHighlightFile('conf', 'yellow', 'none', '#d8a235', 'none')
-  call NERDTreeHighlightFile('json', 'green', 'none', '#d8a235', 'none')
-  call NERDTreeHighlightFile('html', 'yellow', 'none', '#d8a235', 'none')
-  call NERDTreeHighlightFile('css', 'cyan', 'none', '#5486C0', 'none')
-  call NERDTreeHighlightFile('scss', 'cyan', 'none', '#5486C0', 'none')
-  call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', 'none')
-  call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', 'none')
-  call NERDTreeHighlightFile('ts', 'Blue', 'none', '#6699cc', 'none')
-  call NERDTreeHighlightFile('ds_store', 'Gray', 'none', '#686868', 'none')
-  call NERDTreeHighlightFile('gitconfig', 'black', 'none', '#686868', 'none')
-  call NERDTreeHighlightFile('gitignore', 'Gray', 'none', '#7F7F7F', 'none')
 
 " ---
 " Deoplete
@@ -195,8 +166,12 @@
   \: "\<TAB>"
 
 " ---
-" Airline
+"  VIMFiler
 "
-  let g:airline_powerline_fonts = 1
+  let g:vimfiler_tree_leaf_icon = ' '
+  let g:vimfiler_tree_opened_icon = '▾'
+  let g:vimfiler_tree_closed_icon = '▸'
+  let g:vimfiler_file_icon = '-'
+  let g:vimfiler_marked_file_icon = '*'
 
 " }}}
