@@ -36,6 +36,7 @@
   Plug 'othree/html5.vim'
   Plug 'hail2u/vim-css3-syntax'
   Plug 'cakebaker/scss-syntax.vim'
+  Plug 'KabbAmine/gulp-vim'
 
 " Add plugins to &runtimepath
   call plug#end()
