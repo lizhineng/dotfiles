@@ -96,7 +96,7 @@
   set background=dark
 
   set laststatus=2
-  set tabstop=2 shiftwidth=2 expandtab
+  set tabstop=4 shiftwidth=4 expandtab
   set relativenumber number
 
 " change the terminal's title
@@ -179,12 +179,6 @@
               \ endif
               " center buffer around cursor when opening files
   autocmd BufRead * normal zz
-
-" The settings for PHP files
-  autocmd Filetype php setlocal ts=4 sts=4 sw=4
-
-" The settings for js files
-  autocmd Filetype javascript setlocal ts=4 sts=4 sw=4
 
 " }}}
 
