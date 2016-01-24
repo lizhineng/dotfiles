@@ -183,6 +183,9 @@
 " The settings for PHP files
   autocmd Filetype php setlocal ts=4 sts=4 sw=4
 
+" The settings for js files
+  autocmd Filetype javascript setlocal ts=4 sts=4 sw=4
+
 " }}}
 
 
