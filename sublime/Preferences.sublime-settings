@@ -1,0 +1,61 @@
+{
+	// Sets the colors used within the text area
+	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
+
+	// Font setting
+	"font_face": "Hack",
+	"font_size": 14,
+
+	// The number of spaces a tab is considered equal to
+	"tab_size": 4,
+
+	// Set to true to insert spaces when tab is pressed
+	"translate_tabs_to_spaces": true,
+
+	// Always visualise the viewport on the minimap, as opposed to only
+    // showing it on mouse over
+	"always_show_minimap_viewport": true,
+
+	// Controls how the indent guides are drawn, valid options are
+    // "draw_normal" and "draw_active". draw_active will draw the indent
+    // guides containing the caret in a different color.
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
+
+	// Additional spacing at the top of each line, in pixels
+	"line_padding_top": 3,
+
+	// Additional spacing at the bottom of each line, in pixels
+	"line_padding_bottom": 3,
+
+	//
+    // User Interface Settings
+    //
+
+    // The theme controls the look of Sublime Text's UI (buttons, tabs, scroll bars, etc)
+    "theme": "Material-Theme-Darker.sublime-theme",
+
+    // Show folders in the side bar in bold
+	"bold_folder_labels": true,
+
+	// Valid values are "system", "enabled" and "disabled"
+	"overlay_scroll_bars": "enabled",
+
+	//
+    // Application Behavior Settings
+    //
+
+    // OS X only: When files are opened from finder, or by dragging onto the
+    // dock icon, this controls if a new window is created or not.
+	"open_files_in_new_window": false,
+
+	// List any packages to ignore here. When removing entries from this list,
+    // a restart may be required if the package contains plugins.
+	"ignored_packages":
+	[
+		"Vintage"
+	]
+}
