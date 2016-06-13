@@ -9,59 +9,118 @@
 
 " Plugins {{{
 
-  call plug#begin('~/.config/nvim/plugged')
+" set up a dark powered plugin manager
+  if (!isdirectory(expand("$HOME/dotfiles/nvim/repos/github.com/Shougo/dein.vim")))
+    call system(expand("mkdir -p $HOME/dotfiles/nvim/repos/github.com"))
+    call system(expand("git clone https://github.com/Shougo/dein.vim $HOME/dotfiles/nvim/repos/github.com/Shougo/dein.vim"))
+  endif
+
+  set runtimepath^=~/dotfiles/nvim/repos/github.com/Shougo/dein.vim/
+  call dein#begin(expand('~/dotfiles/nvim'))
+
+  call dein#add('Shougo/dein.vim')
 
 " Color Theme: Oceanic Next
 " Link: https://github.com/mhartington/oceanic-next
-  Plug 'mhartington/oceanic-next'
-
-" syntax
-  Plug 'moll/vim-node'
-  Plug 'othree/html5.vim', { 'for': 'html' }
-  Plug 'hail2u/vim-css3-syntax', { 'for': 'css' }
-  Plug 'cakebaker/scss-syntax.vim', { 'for': 'scss' }
-  Plug '1995eaton/vim-better-javascript-completion', { 'for': 'js' }
-  Plug 'burnettk/vim-angular'
+  call dein#add('mhartington/oceanic-next')
 
 " utilities
-  Plug 'bling/vim-airline'
-  Plug 'tpope/vim-surround'
-  Plug 'tomtom/tcomment_vim'
-  Plug 'Chiel92/vim-autoformat'
-  Plug 'gorodinskiy/vim-coloresque', { 'for': 'css' }
-  Plug 'Shougo/unite.vim'
-  Plug 'Shougo/unite-outline'
-  Plug 'scrooloose/nerdtree'
-  Plug 'Shougo/vimfiler' | Plug 'ryanoasis/vim-devicons'
-  Plug 'editorconfig/editorconfig-vim'
+  call dein#add('editorconfig/editorconfig-vim')
+  call dein#add('Yggdroot/indentLine')
+  call dein#add('ap/vim-css-color')
+  call dein#add('scrooloose/nerdtree')
 
-" git
-  Plug 'tpope/vim-fugitive'
-  Plug 'airblade/vim-gitgutter'
-  Plug 'Xuyuanp/nerdtree-git-plugin'
+" syntax
+  call dein#add('dhruvasagar/vim-table-mode')
+  call dein#add('suan/vim-instant-markdown', {'on_ft': 'markdown'})
+  call dein#add('Quramy/tsuquyomi')
 
-" auto completion
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'Shougo/neco-vim'
-  Plug 'Shougo/neoinclude.vim'
-  Plug 'Shougo/neosnippet.vim'
-  Plug 'Shougo/neosnippet-snippets' | Plug 'honza/vim-snippets'
+" front-end
+  call dein#add('elzr/vim-json', {'on_ft': 'json'})
+  call dein#add('valloric/MatchTagAlways', {'on_ft': 'html'})
+  call dein#add('mattn/emmet-vim', {'on_ft': 'html'})
+  call dein#add('valloric/MatchTagAlways', {'on_ft': 'html'})
+  call dein#add('hail2u/vim-css3-syntax', {'on_ft':['css','scss']})
+  call dein#add('othree/yajs.vim', {'on_ft': 'javascript'})
+  call dein#add('othree/jsdoc-syntax.vim', {'on_ft':['javascript', 'typescript']})
+  call dein#add('othree/es.next.syntax.vim', {'on_ft': 'javascript'})
+  call dein#add('othree/javascript-libraries-syntax.vim')
+  call dein#add('1995eaton/vim-better-javascript-completion', {'on_ft': ['javascript']})
+  call dein#add('Raimondi/delimitMate', {'on_ft': ['javascript', 'typescript', 'css', 'scss']})
 
-" front-end related
-  Plug 'mattn/emmet-vim', { 'for': 'html' }
-  Plug 'gregsexton/MatchTag', { 'for': 'html' }
-  Plug 'KabbAmine/gulp-vim'
- 
-" Add plugins to &runtimepath
-  call plug#end()
+" Python
+  call dein#add('tmhedberg/SimpylFold', {'on_ft': 'python'})
+
+" Git
+  call dein#add('tpope/vim-fugitive')
+  call dein#add('jreybert/vimagit')
+  call dein#add('mhinz/vim-signify')
+  call dein#add('Xuyuanp/nerdtree-git-plugin')
+  call dein#add('https://github.com/jaxbot/github-issues.vim')
+
+  call dein#add('tpope/vim-repeat')
+  call dein#add('benekastah/neomake')
+  call dein#add('AndrewRadev/switch.vim')
+  call dein#add('christoomey/vim-tmux-navigator')
+  call dein#add('tmux-plugins/vim-tmux-focus-events')
+  call dein#add('vim-airline/vim-airline')
+  call dein#add('tpope/vim-surround')
+  call dein#add('tomtom/tcomment_vim')
+  call dein#add('Chiel92/vim-autoformat')
+  call dein#add('Shougo/unite.vim')
+  call dein#add('Shougo/unite-outline')
+  call dein#add('ujihisa/unite-colorscheme')
+  call dein#add('junkblocker/unite-codesearch')
+  call dein#add('Shougo/vimproc.vim', {'build' : 'make'})
+  call dein#add('Shougo/deoplete.nvim')
+  call dein#add('carlitux/deoplete-ternjs')
+
+  call dein#add('Shougo/neco-vim', {'on_ft': 'vim'})
+  call dein#add('Shougo/neoinclude.vim')
+  call dein#add('ujihisa/neco-look', {'on_ft': ['markdown','text','html']})
+  call dein#add('zchee/deoplete-jedi')
+  call dein#add('Konfekt/FastFold')
+  call dein#add('Shougo/neosnippet.vim')
+  call dein#add('Shougo/neosnippet-snippets')
+  call dein#add('honza/vim-snippets')
+  call dein#add('matthewsimo/angular-vim-snippets')
+  call dein#add('mhinz/vim-sayonara')
+  call dein#add('mattn/webapi-vim')
+  call dein#add('mattn/gist-vim')
+  call dein#add('terryma/vim-multiple-cursors')
+  call dein#add('rhysd/github-complete.vim')
+  call dein#add('junegunn/goyo.vim')
+  call dein#add('vim-scripts/SyntaxRange')
+  call dein#add('itchyny/vim-cursorword')
+  
+  call dein#add('rhysd/nyaovim-popup-tooltip')
+  call dein#add('troydm/asyncfinder.vim')
+  call dein#add('nelstrom/vim-markdown-folding')
+  call dein#add('tyru/markdown-codehl-onthefly.vim')
+  call dein#add('ryanoasis/vim-devicons')
+
+  if dein#check_install()
+    call dein#install()
+    let pluginsExist=1
+  endif
+
+  call dein#end()
+  filetype plugin indent on
 
 " }}}
 
 
 " Editor Settings {{{
+  " let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+  let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+  let $NEOVIM_JS_DEBUG='nvimjs.log'
 
   set clipboard+=unnamedplus
   set autoread
+
+" currently needed for neovim paste issue
+  set pastetoggle=<f6>
+  set nopaste
 
   " configure backspace so it acts as it should act
   set backspace=eol,start,indent
@@ -82,8 +141,19 @@
 " ignore case
   set ic
 
-  filetype on
-  filetype plugin indent on
+  let g:jsx_ext_required = 0
+  set complete=.,w,b,u,t,k
+  let g:gitgutter_max_signs = 1000  " default value
+  let g:used_javascript_libs = 'angularjs,angularuirouter'
+  autocmd InsertEnter * let save_cwd = getcwd() | set autochdir
+  autocmd InsertLeave * set noautochdir | execute 'cd' fnameescape(save_cwd)
+  let g:indentLine_char='│'
+  " enable deoplete
+  let g:deoplete#enable_at_startup = 1
+  let g:go_fmt_command = "goimports"
+  let g:deoplete#sources#go = 'vim-go'
+  let g:unite_source_codesearch_command = '$HOME/bin/csearch'
+  let g:table_mode_corner="|"
 
 " }}}
 
@@ -122,12 +192,18 @@
 " No need for ex mode
   nnoremap Q <nop>
 
+" recording macros is not my thing
+  map q <Nop>
+
 " exit insert, dd line, enter insert
   inoremap <c-d> <esc>ddi
   noremap H ^
   noremap L g_
   noremap J 5j
   noremap K 5k
+
+" copy current files path to clipboard
+  nmap cp :let @+ = expand("%") <cr>
 
 " align blocks of text and keep them selected
   vmap < <gv
@@ -140,6 +216,10 @@
 
 " delete the current line
   map - dd
+  inoremap <c-d> <esc>ddi
+
+" ,f to format code, requires formatters: read the docs
+  noremap <leader>f :Autoformat<CR>
 
 " smart way to move between windows
   map <c-j> <c-w>j
@@ -191,26 +271,6 @@
   let g:deoplete#enable_at_startup = 1
 
 " ---
-" Snippets
-"
-" Enable snipMate compatibility feature.
-  let g:neosnippet#enable_snipmate_compatibility = 1
-  imap <C-k> <Plug>(neosnippet_expand_or_jump)
-  smap <C-k> <Plug>(neosnippet_expand_or_jump)
-  xmap <C-k> <Plug>(neosnippet_expand_target)
-
-" Tell Neosnippet about the other snippets
-  let g:neosnippet#snippets_directory='~/.config/nvim/plugged/neosnippet-snippets/neosnippets'
-
-" SuperTab like snippets behavior.
-  imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-  \ "\<Plug>(neosnippet_expand_or_jump)"
-  \: pumvisible() ? "\<C-n>" : "\<TAB>"
-  smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-  \ "\<Plug>(neosnippet_expand_or_jump)"
-  \: "\<TAB>"
-
-" ---
 "  TComment
 "
   vnoremap <c-/> :TComment<cr>
@@ -218,8 +278,8 @@
 " ---
 "  NERDTree
 "
-  let NERDTreeShowHidden=1
-  map <c-n> :NERDTreeToggle<cr>
+  map <C-\> :NERDTreeToggle<CR>
+  autocmd StdinReadPre * let s:std_in=1
 
   " NERDTress File highlighting
   function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
@@ -242,20 +302,13 @@
   call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
 
 " ---
-"  VIMFiler
-"
-  let g:vimfiler_safe_mode_by_default = 0
-  let g:vimfiler_tree_leaf_icon = ' '
-  let g:vimfiler_tree_opened_icon = '▾'
-  let g:vimfiler_tree_closed_icon = '▸'
-  let g:vimfiler_file_icon = '-'
-  let g:vimfiler_marked_file_icon = '*'
-  map <c-\> :VimFiler<cr>
-
-" ---
 "  Airline
 "
   let g:airline_theme='oceanicnext'
+
+  nnoremap <silent> <leader>u :call dein#update()<CR>
+
+  let g:tmux_navigator_no_mappings = 1
 
 " }}}
 
