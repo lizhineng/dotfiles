@@ -1,5 +1,4 @@
 nvim/*
 !nvim/init.vim
-oh-my-zsh/
-sublime/Package Control.cache
-sublime/Package Control.last-run
+sublime/User/Package Control.cache
+sublime/User/Package Control.last-run
