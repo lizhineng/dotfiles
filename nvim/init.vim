@@ -2,21 +2,21 @@
 "  Configuration file for NeoVIM
 "
 "  Author:    Li Zhineng <lizhineng@gmail.com>
-"  URL:	      http://zhineng.li
-"  Repo:      https://github.com/lizhineng/dotfiles
+"  URL:	      https://zhineng.li
+"  Repo:      https://github.com/lizhineng/.dotfiles
 " ---
 
 
 " Plugins {{{
 
 " set up a dark powered plugin manager
-  if (!isdirectory(expand("$HOME/dotfiles/nvim/repos/github.com/Shougo/dein.vim")))
-    call system(expand("mkdir -p $HOME/dotfiles/nvim/repos/github.com"))
-    call system(expand("git clone https://github.com/Shougo/dein.vim $HOME/dotfiles/nvim/repos/github.com/Shougo/dein.vim"))
+  if (!isdirectory(expand("$HOME/.dotfiles/nvim/repos/github.com/Shougo/dein.vim")))
+    call system(expand("mkdir -p $HOME/.dotfiles/nvim/repos/github.com"))
+    call system(expand("git clone https://github.com/Shougo/dein.vim $HOME/.dotfiles/nvim/repos/github.com/Shougo/dein.vim"))
   endif
 
-  set runtimepath^=~/dotfiles/nvim/repos/github.com/Shougo/dein.vim/
-  call dein#begin(expand('~/dotfiles/nvim'))
+  set runtimepath^=~/.dotfiles/nvim/repos/github.com/Shougo/dein.vim/
+  call dein#begin(expand('~/.dotfiles/nvim'))
 
   call dein#add('Shougo/dein.vim')
 
@@ -34,9 +34,9 @@
   call dein#add('dhruvasagar/vim-table-mode')
   call dein#add('suan/vim-instant-markdown', {'on_ft': 'markdown'})
   call dein#add('Quramy/tsuquyomi')
+  call dein#add('elzr/vim-json', {'on_ft': 'json'})
 
 " front-end
-  call dein#add('elzr/vim-json', {'on_ft': 'json'})
   call dein#add('valloric/MatchTagAlways', {'on_ft': 'html'})
   call dein#add('mattn/emmet-vim', {'on_ft': 'html'})
   call dein#add('valloric/MatchTagAlways', {'on_ft': 'html'})
@@ -72,13 +72,10 @@
   call dein#add('ujihisa/unite-colorscheme')
   call dein#add('junkblocker/unite-codesearch')
   call dein#add('Shougo/vimproc.vim', {'build' : 'make'})
-  call dein#add('Shougo/deoplete.nvim')
-  call dein#add('carlitux/deoplete-ternjs')
 
   call dein#add('Shougo/neco-vim', {'on_ft': 'vim'})
   call dein#add('Shougo/neoinclude.vim')
   call dein#add('ujihisa/neco-look', {'on_ft': ['markdown','text','html']})
-  call dein#add('zchee/deoplete-jedi')
   call dein#add('Konfekt/FastFold')
   call dein#add('Shougo/neosnippet.vim')
   call dein#add('Shougo/neosnippet-snippets')
@@ -98,6 +95,11 @@
   call dein#add('nelstrom/vim-markdown-folding')
   call dein#add('tyru/markdown-codehl-onthefly.vim')
   call dein#add('ryanoasis/vim-devicons')
+
+  " deoplete
+  call dein#add('Shougo/deoplete.nvim')
+  call dein#add('carlitux/deoplete-ternjs')
+  call dein#add('zchee/deoplete-jedi')
 
   if dein#check_install()
     call dein#install()

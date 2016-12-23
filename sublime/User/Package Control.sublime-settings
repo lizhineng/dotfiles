@@ -5,8 +5,12 @@
 	],
 	"installed_packages":
 	[
+		"Babel",
+		"EditorConfig",
+		"Git",
 		"Material Theme",
 		"Package Control",
+		"PhpDoc",
 		"Sass"
 	]
 }
