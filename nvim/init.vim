@@ -29,6 +29,7 @@
   call dein#add('Yggdroot/indentLine')
   call dein#add('ap/vim-css-color')
   call dein#add('scrooloose/nerdtree')
+  call dein#add('ctrlpvim/ctrlp.vim')
 
 " syntax
   call dein#add('dhruvasagar/vim-table-mode')
@@ -271,6 +272,13 @@
 " Deoplete
 "
   let g:deoplete#enable_at_startup = 1
+
+" ---
+"  Ctrlp
+"
+  let g:ctrlp_map = '<c-o>'
+  let g:ctrlp_working_path_mode = 'ra'
+  let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
 " ---
 "  TComment
