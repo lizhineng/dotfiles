@@ -21,8 +21,8 @@
   call dein#add('Shougo/dein.vim')
 
 " Color Theme: Oceanic Next
-" Link: https://github.com/mhartington/oceanic-next
-  call dein#add('mhartington/oceanic-next')
+" Link: https://draculatheme.com/vim/
+  call dein#add('dracula/vim')
 
 " utilities
   call dein#add('editorconfig/editorconfig-vim')
@@ -165,7 +165,7 @@
 
   syntax enable
   "let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-  colorscheme OceanicNext
+  colorscheme Dracula
   set background=dark
 
   set laststatus=2
@@ -314,7 +314,7 @@
 " ---
 "  Airline
 "
-  let g:airline_theme='oceanicnext'
+  let g:airline_theme='dracula'
 
   nnoremap <silent> <leader>u :call dein#update()<CR>
 
