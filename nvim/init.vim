@@ -42,12 +42,16 @@
   call dein#add('mattn/emmet-vim', {'on_ft': 'html'})
   call dein#add('valloric/MatchTagAlways', {'on_ft': 'html'})
   call dein#add('hail2u/vim-css3-syntax', {'on_ft':['css','scss']})
-  call dein#add('othree/yajs.vim', {'on_ft': 'javascript'})
-  call dein#add('othree/jsdoc-syntax.vim', {'on_ft':['javascript', 'typescript']})
-  call dein#add('othree/es.next.syntax.vim', {'on_ft': 'javascript'})
-  call dein#add('othree/javascript-libraries-syntax.vim')
   call dein#add('1995eaton/vim-better-javascript-completion', {'on_ft': ['javascript']})
   call dein#add('Raimondi/delimitMate', {'on_ft': ['javascript', 'typescript', 'css', 'scss']})
+
+" Javscript
+  call dein#add('othree/yajs.vim', {'on_ft': 'javascript'})
+  call dein#add('othree/jspc.vim', {'on_ft': 'javascript'})
+  call dein#add('mxw/vim-jsx', {'on_ft': 'jsx'})
+  call dein#add('othree/jsdoc-syntax.vim', {'on_ft':['javascript', 'typescript']})
+  " call dein#add('othree/es.next.syntax.vim', {'on_ft': 'javascript'})
+  " call dein#add('othree/javascript-libraries-syntax.vim')
 
 " Python
   call dein#add('tmhedberg/SimpylFold', {'on_ft': 'python'})
