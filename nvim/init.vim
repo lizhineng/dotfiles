@@ -50,6 +50,7 @@
   call dein#add('othree/jsdoc-syntax.vim', {'on_ft':['javascript', 'typescript']})
   " call dein#add('othree/es.next.syntax.vim', {'on_ft': 'javascript'})
   " call dein#add('othree/javascript-libraries-syntax.vim')
+  call dein#add('ternjs/tern_for_vim', {'build': 'yarn install'})
 
 " Python
   call dein#add('tmhedberg/SimpylFold', {'on_ft': 'python'})
@@ -101,8 +102,8 @@
 
   " deoplete
   call dein#add('Shougo/deoplete.nvim')
-  call dein#add('carlitux/deoplete-ternjs')
-  call dein#add('zchee/deoplete-jedi')
+  call dein#add('carlitux/deoplete-ternjs', {'on_ft': ['javascript','jsx']})
+  call dein#add('zchee/deoplete-jedi', {'on_ft': 'python'})
 
   if dein#check_install()
     call dein#install()
@@ -113,7 +114,6 @@
   filetype plugin indent on
 
 " }}}
-
 
 " Editor Settings {{{
   " let $NVIM_TUI_ENABLE_TRUE_COLOR=1
@@ -153,15 +153,18 @@
   autocmd InsertEnter * let save_cwd = getcwd() | set autochdir
   autocmd InsertLeave * set noautochdir | execute 'cd' fnameescape(save_cwd)
   let g:indentLine_char='│'
-  " enable deoplete
+
+" enable deoplete
+  set completeopt=longest,menuone,preview
   let g:deoplete#enable_at_startup = 1
-  let g:go_fmt_command = "goimports"
-  let g:deoplete#sources#go = 'vim-go'
-  let g:unite_source_codesearch_command = '$HOME/bin/csearch'
-  let g:table_mode_corner="|"
+  let g:deoplete#sources = {}
+  let g:deoplete#sources['javascript.jsx'] = ['file', 'ultisnips', 'ternjs']
+  let g:tern#command = ['tern']
+  let g:tern#arguments = ['--persistent']
+  " let g:unite_source_codesearch_command = '$HOME/bin/csearch'
+  " let g:table_mode_corner="|"
 
 " }}}
-
 
 " Apperance {{{
 
@@ -178,7 +181,6 @@
   set title
 
 " }}}
-
 
 " Key Mapping {{{
 
@@ -254,7 +256,6 @@
 
 " }}}
 
-
 " Misc {{{
 
 " Remember cursor position between vim sessions
@@ -266,7 +267,6 @@
   autocmd BufRead * normal zz
 
 " }}}
-
 
 " Plugins Settings {{{
 
@@ -321,6 +321,26 @@
   nnoremap <silent> <leader>u :call dein#update()<CR>
 
   let g:tmux_navigator_no_mappings = 1
+
+" }}}
+
+" Specific Configration {{{
+
+" CSS {{{
+
+  autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+
+" }}}
+
+" Javascript {{{
+
+  let g:deoplete#omni#functions = {}
+  let g:deoplete#omni#functions.javascript = [
+    \ 'tern#Complete',
+    \ 'jspc#omni'
+  \]
+
+" }}}
 
 " }}}
 
