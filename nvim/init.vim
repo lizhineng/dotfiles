@@ -27,7 +27,6 @@
 " utilities
   call dein#add('editorconfig/editorconfig-vim')
   call dein#add('Yggdroot/indentLine')
-  call dein#add('ap/vim-css-color')
   call dein#add('scrooloose/nerdtree')
   call dein#add('ctrlpvim/ctrlp.vim')
 
@@ -37,13 +36,12 @@
   call dein#add('Quramy/tsuquyomi')
   call dein#add('elzr/vim-json', {'on_ft': 'json'})
 
-" front-end
+" HTML or CSS
   call dein#add('valloric/MatchTagAlways', {'on_ft': 'html'})
   call dein#add('mattn/emmet-vim', {'on_ft': 'html'})
-  call dein#add('valloric/MatchTagAlways', {'on_ft': 'html'})
+  call dein#add('othree/html5.vim', {'on_ft': 'html'})
   call dein#add('hail2u/vim-css3-syntax', {'on_ft':['css','scss']})
-  call dein#add('1995eaton/vim-better-javascript-completion', {'on_ft': ['javascript']})
-  call dein#add('Raimondi/delimitMate', {'on_ft': ['javascript', 'typescript', 'css', 'scss']})
+  call dein#add('ap/vim-css-color', {'on_ft': ['css','scss']})
 
 " Javscript
   call dein#add('othree/yajs.vim', {'on_ft': 'javascript'})
