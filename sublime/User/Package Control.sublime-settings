@@ -10,12 +10,15 @@
 		"EditorConfig",
 		"Git",
 		"GitGutter",
+		"Laravel 5 Artisan",
 		"Material Theme",
 		"Origami",
 		"Package Control",
 		"PHP Companion",
 		"PhpDoc",
 		"Sass",
+		"SublimeLinter",
+		"SublimeLinter-php",
 		"Vue Syntax Highlight"
 	]
 }
