@@ -1,9 +1,21 @@
 syntax enable
-colorscheme desert
-let mapleader = ','
+let mapleader=','
 set backspace=indent,eol,start
 set nu
-set rnu 
+set rnu
+
+
+" ------------------ Visuals ------------------ "
+
+colorscheme desert
+set t_CO=256
+set guifont=Hack:h16
+set linespace=12
+
+set guioptions-=l
+set guioptions-=L
+set guioptions-=r
+set guioptions-=R
 
 
 " ----------------- Searching ----------------- "
