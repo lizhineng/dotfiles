@@ -24,6 +24,17 @@ set hlsearch
 set incsearch
 
 
+" -------------- Split Mangement -------------- "
+
+set splitbelow
+set splitright
+
+nmap <C-J> <C-W><C-J>
+nmap <C-K> <C-W><C-K>
+nmap <C-H> <C-W><C-H>
+nmap <C-L> <C-W><C-L>
+
+
 " ------------------ Mapping ------------------ "
 
 " Make it easy to edit the .vimrc file
