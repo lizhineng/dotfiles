@@ -1,4 +1,5 @@
-syntax enable
+so ~/.vim/plugins.vim
+
 let mapleader=','
 set backspace=indent,eol,start
 set nu
@@ -39,6 +40,10 @@ nmap <C-L> <C-W><C-L>
 
 " Make it easy to edit the .vimrc file
 nmap <Leader>ev :tabedit $MYVIMRC<cr>
+
+" Make NERDTree easier to toggle
+nmap <C-\> :NERDTreeToggle<cr>
+nmap <D-1> :NERDTreeToggle<cr>
 
 
 " --------------- Auto Commands --------------- "

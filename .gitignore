@@ -1,3 +1,4 @@
+.vim/dein
 nvim/*
 !nvim/init.vim
 sublime/User/Package Control.cache
