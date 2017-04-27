@@ -14,6 +14,7 @@ if dein#load_state('~/.dotfiles/.vim/dein')
   call dein#add('~/.dotfiles/.vim/dein/repos/github.com/Shougo/dein.vim')
 
   call dein#add('scrooloose/nerdtree')
+  call dein#add('ctrlpvim/ctrlp.vim')
 
   " Required:
   call dein#end()

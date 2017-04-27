@@ -42,8 +42,24 @@ nmap <C-L> <C-W><C-L>
 nmap <Leader>ev :tabedit $MYVIMRC<cr>
 
 " Make NERDTree easier to toggle
-nmap <C-\> :NERDTreeToggle<cr>
 nmap <D-1> :NERDTreeToggle<cr>
+
+" CtrlP
+nmap <C-R> :CtrlPBufTag<cr>
+nmap <D-e> :CtrlPMRUFiles<cr>
+
+
+" -------------- Plugins Settings ------------- "
+
+" /
+" / CtrlP
+" /
+let g:ctrlp_map = '<C-O>'
+let g:ctrlp_custom_ignore = {
+    \ 'dir':  '\v[\/]\.(git|hg|svn|node_modules|vendor)$',
+    \ 'file': '\v\.(exe|so|dll|DS_Store)$',
+    \ 'link': 'SOME_BAD_SYMBOLIC_LINKS',
+    \ }
 
 
 " --------------- Auto Commands --------------- "
