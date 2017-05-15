@@ -45,12 +45,16 @@ nmap <C-L> <C-W><C-L>
 nmap <Leader>ev :tabedit $MYVIMRC<cr>
 
 
-" ------------------ Plugins ------------------ "
+" -------------- Plugins Settings ------------- "
 
 " /
 " / CtrlP
 " /
-let g:ctrlp_custom_ignore = "node_modules\DS_Store\git"
+let g:ctrlp_custom_ignore = {
+    \ 'dir':  '\v[\/]\.(git|hg|svn|node_modules|vendor)$',
+    \ 'file': '\v\.(exe|so|dll|DS_Store)$',
+    \ 'link': 'SOME_BAD_SYMBOLIC_LINKS',
+    \ }
 
 nmap <D-p> :CtrlP<cr>
 nmap <D-r> :CtrlPBufTag<cr>
