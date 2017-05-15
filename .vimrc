@@ -10,9 +10,12 @@ set rnu
 
 colorscheme desert
 set t_CO=256
-set guifont=Hack:h16
-set linespace=12
+set guifont=Fira\ Code:h16
+set linespace=15
 
+set guioptions-=e
+
+" Disable GUI scrollbars
 set guioptions-=l
 set guioptions-=L
 set guioptions-=r
@@ -41,8 +44,23 @@ nmap <C-L> <C-W><C-L>
 " Make it easy to edit the .vimrc file
 nmap <Leader>ev :tabedit $MYVIMRC<cr>
 
-" Make NERDTree easier to toggle
-nmap <C-\> :NERDTreeToggle<cr>
+
+" ------------------ Plugins ------------------ "
+
+" /
+" / CtrlP
+" /
+let g:ctrlp_custom_ignore = "node_modules\DS_Store\git"
+
+nmap <D-p> :CtrlP<cr>
+nmap <D-r> :CtrlPBufTag<cr>
+nmap <D-e> :CtrlPMRUFiles<cr>
+
+" /
+" / NERDTree
+" /
+let NERDTreeHijackNetrw = 0
+
 nmap <D-1> :NERDTreeToggle<cr>
 
 

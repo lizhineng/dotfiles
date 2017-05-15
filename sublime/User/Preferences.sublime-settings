@@ -5,7 +5,6 @@
 	"font_face": "Hack",
 	"font_options":
 	[
-		"gray_antialias",
 		"subpixel_antialias"
 	],
 	"font_size": 15,
