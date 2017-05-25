@@ -1,17 +1,24 @@
 [user]
-	name = Li Zhineng
-	email = lizhineng@gmail.com
-	signingkey = 3BC18C525122EA34
+    name = Li Zhineng
+    email = lizhineng@gmail.com
+    signingkey = 3BC18C525122EA34
 [alias]
+    overview = log --all --oneline --no-merges
     glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+    graph = log --graph --all --decorate --stat --date=iso
+    stats = shortlog -sn
+    today = log --since=00:00:00 --all --no-merges --oneline --author=lizhineng@gmail.com
+    recent = for-each-ref --count=10 --sort=-committerdate refs/heads/ --format="%(refname:short)"
+    recap = log --all --oneline --no-merges --author=lizhineng@gmail.com
+    praise = blame
 [core]
-	excludesfile = /Users/zhineng/.gitignore_global
+    excludesfile = /Users/zhineng/.gitignore_global
 [merge]
     ff = only
     conflictstyle = diff3
 [commit]
-	gpgsign = true
-	template = /Users/zhineng/.stCommitMsg
+    gpgsign = true
+    template = /Users/zhineng/.stCommitMsg
 [push]
     default = simple
     followTags = true
@@ -24,4 +31,4 @@
 [difftool "icdiff"]
     cmd = /usr/local/bin/icdiff --line-numbers $LOCAL $REMOTE
 [gpg]
-	program = /usr/local/bin/gpg2
+    program = /usr/local/bin/gpg2
