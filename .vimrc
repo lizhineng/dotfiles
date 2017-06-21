@@ -10,7 +10,7 @@ set rnu
 
 colorscheme dracula
 set t_CO=256
-set guifont=Fira\ Code:h16
+set guifont=Fira\ Code:h17
 set linespace=15
 
 set guioptions-=e

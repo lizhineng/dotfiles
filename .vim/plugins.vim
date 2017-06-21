@@ -16,6 +16,8 @@ if dein#load_state('~/.dotfiles/.vim/dein')
   " Themes
   call dein#add('dracula/vim')
 
+  " Common
+  call dein#add('tpope/vim-vinegar')
   call dein#add('scrooloose/nerdtree')
   call dein#add('ctrlpvim/ctrlp.vim')
 
