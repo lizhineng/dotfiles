@@ -20,6 +20,13 @@ if dein#load_state('~/.dotfiles/.vim/dein')
   call dein#add('tpope/vim-vinegar')
   call dein#add('scrooloose/nerdtree')
   call dein#add('ctrlpvim/ctrlp.vim')
+  call dein#add('rking/ag.vim')
+  call dein#add('skwp/greplace.vim')
+  call dein#add('tpope/vim-surround')
+
+  " PHP
+  call dein#add('StanAngeloff/php.vim')
+  call dein#add('arnaud-lb/vim-php-namespace')
 
   " Required:
   call dein#end()
