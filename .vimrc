@@ -3,6 +3,7 @@ so ~/.vim/plugins.vim
 let mapleader=','
 set backspace=indent,eol,start
 set nonumber
+set autoread
 
 " No damn bells!
 set noerrorbells visualbell t_vb=
@@ -30,6 +31,12 @@ hi foldcolumn guibg=bg
 
 " Get rid of ugly split borders
 hi vertsplit guifg=bg guibg=bg
+
+" Automaticaaly write the file when switching buffers
+set autowriteall
+
+" Set our desired autocompletion matching
+set complete=.,w,b,u
 
 
 " ----------------- Searching ----------------- "
@@ -68,7 +75,6 @@ let g:ctrlp_custom_ignore = {
     \ 'file': '\v\.(exe|so|dll|DS_Store)$',
     \ 'link': 'SOME_BAD_SYMBOLIC_LINKS',
     \ }
-
 nmap <D-p> :CtrlP<cr>
 nmap <D-r> :CtrlPBufTag<cr>
 nmap <D-e> :CtrlPMRUFiles<cr>
@@ -77,13 +83,11 @@ nmap <D-e> :CtrlPMRUFiles<cr>
 " / NERDTree
 " /
 let NERDTreeHijackNetrw = 0
-
 nmap <D-1> :NERDTreeToggle<cr>
 
 " /
 " / Greplace.vim
 " /
-
 set grepprg=ag
 let g:grep_cmd_opts = '--line-numbers --noheading'
 
@@ -106,6 +110,9 @@ function! IPhpExpandClass()
 endfunction
 autocmd FileType php inoremap <Leader>nf <Esc>:call IPhpExpandClass()<CR>
 autocmd FileType php noremap <Leader>nf :call PhpExpandClass()<CR>
+
+" Automatic PSR-2 formatting
+autocmd FileType php nmap <leader>l :silent !php-cs-fixer fix "%" --rules=@PSR2<cr>
 
 
 " ------------- Laravel Specific -------------- "
