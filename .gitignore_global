@@ -1,5 +1,6 @@
 *~
 *.swp
+*.cache
 .DS_Store
 .idea/
 dump.rdb
