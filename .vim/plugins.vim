@@ -23,10 +23,13 @@ if dein#load_state('~/.dotfiles/.vim/dein')
   call dein#add('rking/ag.vim')
   call dein#add('skwp/greplace.vim')
   call dein#add('tpope/vim-surround')
+  call dein#add('SirVer/ultisnips')
 
   " PHP
   call dein#add('StanAngeloff/php.vim')
   call dein#add('arnaud-lb/vim-php-namespace')
+  call dein#add('tobyS/vmustache')
+  call dein#add('tobyS/pdv')
 
   " Required:
   call dein#end()

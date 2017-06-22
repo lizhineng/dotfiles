@@ -96,6 +96,18 @@ nmap <D-1> :NERDTreeToggle<cr>
 set grepprg=ag
 let g:grep_cmd_opts = '--line-numbers --noheading'
 
+"/
+"/ pdv
+"/
+let g:pdv_template_dir = $HOME . "/.vim/dein/repos/github.com/tobyS/pdv/templates_snip"
+
+"/
+"/ Ultisnips
+"/
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+
 
 " --------------- PHP Specific ---------------- "
 
@@ -118,6 +130,9 @@ autocmd FileType php noremap <Leader>nf :call PhpExpandClass()<CR>
 
 " Automatic PSR-2 formatting
 autocmd FileType php nmap <leader>l :silent !php-cs-fixer fix "%" --rules=@PSR2<cr>
+
+" Automatic generate PHPdoc by pdv plugin
+autocmd FileType php nnoremap <leader>d :call pdv#DocumentWithSnip()<CR>
 
 
 " ------------- Laravel Specific -------------- "
