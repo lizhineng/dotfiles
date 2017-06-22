@@ -8,6 +8,17 @@ set autoread
 " No damn bells!
 set noerrorbells visualbell t_vb=
 
+" Automaticaaly write the file when switching buffers
+set autowriteall
+
+" Set our desired autocompletion matching
+set complete=.,w,b,u
+
+set tabstop=8
+set expandtab
+set softtabstop=4
+set shiftwidth=4
+
 
 " ------------------ Visuals ------------------ "
 
@@ -31,12 +42,6 @@ hi foldcolumn guibg=bg
 
 " Get rid of ugly split borders
 hi vertsplit guifg=bg guibg=bg
-
-" Automaticaaly write the file when switching buffers
-set autowriteall
-
-" Set our desired autocompletion matching
-set complete=.,w,b,u
 
 
 " ----------------- Searching ----------------- "
@@ -133,3 +138,6 @@ augroup END
 " - Press 'zz' to instanly center the line where the cursor is located.
 " - Press '<c>]' to jump into the implementation of the function.
 " - Press '<c>^' to jump back the previous buffer.
+" - Press 'm{letter}' to set a mark.
+" - Press ''{letter}' to go back to the specific mark line.
+" - Press '`{letter}' to go back to the specific mark line with the last column position.
