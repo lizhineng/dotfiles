@@ -69,6 +69,9 @@ nmap <Leader>ev :tabedit $MYVIMRC<cr>
 " Find function more quickly
 nmap <Leader>f :tag<space>
 
+" Toggle the display of line number
+nmap <c-n> :set number!<cr>
+
 
 " -------------- Plugins Settings ------------- "
 
