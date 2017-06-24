@@ -152,6 +152,14 @@ augroup autosourcing
 augroup END
 
 
+
+" ------------------- Misc -------------------- "
+
+" MacVIM startup is too slow
+let g:did_install_default_menus = 1
+let g:did_menu_trans = 1
+
+
 " Notes and Tips
 " - Press 'zz' to instanly center the line where the cursor is located.
 " - Press '<c>]' to jump into the implementation of the function.
