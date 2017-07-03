@@ -5,6 +5,19 @@ set backspace=indent,eol,start
 set nonumber
 set autoread
 
+" Ignore dist and build folders
+set wildignore+=*/dist/**,*/build/**,*/target/**
+
+" Ignore libs
+set wildignore+=*/node_modules/**,*/bower_components/**,*/vendor/**
+
+" Ignore images, pdfs, and font files
+set wildignore+=*.png,*.PNG,*.jpg,*.jpeg,*.JPG,*.JPEG,*.pdf
+set wildignore+=*.ttf,*.otf,*.woff,*.woff2,*.eot
+
+" Ignore compiled files
+set wildignore+=*.class,*.pyc
+
 " No damn bells!
 set noerrorbells visualbell t_vb=
 
@@ -78,11 +91,13 @@ nmap <c-n> :set number!<cr>
 " /
 " / CtrlP
 " /
+let g:ctrlp_show_hidden = 1
 let g:ctrlp_custom_ignore = {
-    \ 'dir':  '\v[\/]\.(git|hg|svn|node_modules|vendor)$',
-    \ 'file': '\v\.(exe|so|dll|DS_Store)$',
-    \ 'link': 'SOME_BAD_SYMBOLIC_LINKS',
-    \ }
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }
+"let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 nmap <D-p> :CtrlP<cr>
 nmap <D-r> :CtrlPBufTag<cr>
 nmap <D-e> :CtrlPMRUFiles<cr>
