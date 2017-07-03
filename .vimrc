@@ -59,7 +59,13 @@ hi vertsplit guifg=bg guibg=bg
 
 " ----------------- Searching ----------------- "
 
+" Ignore case when searching
+set ignorecase
+
+" Highlight search results
 set hlsearch
+
+" Makes search act like search in modern browsers
 set incsearch
 
 
