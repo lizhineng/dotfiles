@@ -24,6 +24,7 @@ if dein#load_state('~/.dotfiles/.vim/dein')
   call dein#add('skwp/greplace.vim')
   call dein#add('tpope/vim-surround')
   call dein#add('SirVer/ultisnips')
+  call dein#add('editorconfig/editorconfig-vim')
 
   " PHP
   call dein#add('StanAngeloff/php.vim')
