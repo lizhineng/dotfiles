@@ -26,6 +26,9 @@ if dein#load_state('~/.dotfiles/.vim/dein')
   call dein#add('SirVer/ultisnips')
   call dein#add('editorconfig/editorconfig-vim')
 
+  " Front-end
+  call dein#add('posva/vim-vue')
+
   " PHP
   call dein#add('StanAngeloff/php.vim')
   call dein#add('arnaud-lb/vim-php-namespace')
