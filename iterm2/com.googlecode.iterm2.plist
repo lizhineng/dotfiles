@@ -223,6 +223,8 @@
 	</dict>
 	<key>Default Bookmark Guid</key>
 	<string>51539A76-5E54-4750-B644-CF029171A2D1</string>
+	<key>HideTab</key>
+	<true/>
 	<key>Hotkey</key>
 	<true/>
 	<key>HotkeyChar</key>
@@ -274,7 +276,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>1731 1207 445 77 1068 900 2560 1417 </string>
+	<string>311 60 445 77 0 0 1440 877 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>1310 1684 400 129 1068 900 2560 1417 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
@@ -282,9 +284,9 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>491 249 599 388 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>308 308 796 473 0 0 1440 900 </string>
+	<string>277 191 796 473 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>2483 1495 730 477 1068 900 2560 1417 </string>
+	<string>102 109 730 677 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>1411 1081 570 452 1068 900 2560 1417 </string>
 	<key>New Bookmarks</key>
@@ -519,7 +521,7 @@
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
-			<string>No</string>
+			<string>Recycle</string>
 			<key>Default Bookmark</key>
 			<string>No</string>
 			<key>Description</key>
