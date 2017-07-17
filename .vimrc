@@ -91,6 +91,12 @@ nmap <Leader>f :tag<space>
 " Toggle the display of line number
 nmap <c-n> :set number!<cr>
 
+" Quickly switch between buffers
+nnoremap <silent> [b :bprevious<cr>
+nnoremap <silent> ]b :bnext<cr>
+nnoremap <silent> [B :bfirst<cr>
+nnoremap <silent> ]B :blast<cr>
+
 
 " -------------- Plugins Settings ------------- "
 
