@@ -49,7 +49,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git common-aliases osx bower brew Composer laravel5 web-search emoji yarn)
+plugins=(git common-aliases osx bower brew Composer laravel5 web-search emoji yarn pass)
 
 # User configuration
 
