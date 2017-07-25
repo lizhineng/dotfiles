@@ -138,6 +138,16 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
+"/
+"/ Emmet
+"/
+" Enable just for HTML and CSS file
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
+
+" Remap the trigger key
+"let g:user_emmet_leader_key='<tab>'
+
 
 " --------------- PHP Specific ---------------- "
 

@@ -28,6 +28,7 @@ if dein#load_state('~/.dotfiles/.vim/dein')
 
   " Front-end
   call dein#add('posva/vim-vue')
+  call dein#add('mattn/emmet-vim')
 
   " PHP
   call dein#add('StanAngeloff/php.vim')
