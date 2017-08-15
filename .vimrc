@@ -97,6 +97,9 @@ nnoremap <silent> ]b :bnext<cr>
 nnoremap <silent> [B :bfirst<cr>
 nnoremap <silent> ]B :blast<cr>
 
+" Easy expansion of the active file directory
+cnoremap <expr> %%  getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+
 
 " -------------- Plugins Settings ------------- "
 
