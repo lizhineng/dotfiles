@@ -27,8 +27,11 @@ if dein#load_state('~/.dotfiles/.vim/dein')
   call dein#add('editorconfig/editorconfig-vim')
 
   " Front-end
+  call dein#add('mxw/vim-jsx')
   call dein#add('posva/vim-vue')
   call dein#add('mattn/emmet-vim')
+  call dein#add('vim-syntastic/syntastic')
+  call dein#add('Chiel92/vim-autoformat')
 
   " PHP
   call dein#add('StanAngeloff/php.vim')
