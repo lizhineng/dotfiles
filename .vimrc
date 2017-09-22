@@ -146,7 +146,7 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 "/
 " Enable just for HTML and CSS file
 let g:user_emmet_install_global = 0
-autocmd FileType html,css EmmetInstall
+autocmd FileType html,vue,css EmmetInstall
 
 " Remap the trigger key
 "let g:user_emmet_leader_key='<tab>'
