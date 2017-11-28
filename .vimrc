@@ -51,10 +51,15 @@ set guioptions-=R
 
 " Fake a custom left padding for each window
 set foldcolumn=2
-hi foldcolumn guibg=bg
+hi foldcolumn guibg=bg ctermbg=NONE
 
 " Get rid of ugly split borders
 hi vertsplit guifg=bg guibg=bg
+
+" Hide the white bar of the tabs in cli
+hi TabLineFill ctermfg=NONE ctermbg=NONE cterm=NONE
+hi TabLine ctermfg=242 ctermbg=NONE cterm=NONE
+hi TabLineSel ctermfg=NONE ctermbg=NONE cterm=NONE
 
 
 " ----------------- Searching ----------------- "
@@ -212,6 +217,10 @@ augroup END
 " MacVIM startup is too slow
 let g:did_install_default_menus = 1
 let g:did_menu_trans = 1
+
+" Python interpreter
+let g:python_host_prog="/usr/local/bin/python2"
+let g:python3_host_prog="/usr/local/bin/python3"
 
 
 " Notes and Tips
