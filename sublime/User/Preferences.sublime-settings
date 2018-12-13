@@ -18,8 +18,8 @@
 		"draw_active"
 	],
 	"line_numbers": false,
-	"line_padding_bottom": 5,
-	"line_padding_top": 5,
+	"line_padding_bottom": 15,
+	"line_padding_top": 15,
 	"margin": 0,
 	"material_theme_small_tab": true,
 	"material_theme_tabs_autowidth": true,
