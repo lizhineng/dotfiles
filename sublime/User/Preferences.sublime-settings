@@ -23,11 +23,11 @@
 	"material_theme_small_tab": true,
 	"material_theme_tabs_autowidth": true,
 	"overlay_scroll_bars": "enabled",
+	"phpunit-sublime-terminal": "iTerm",
 	"show_panel_on_build": false,
 	"theme": "Default.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"use_simple_full_screen": true,
 	"vintage_start_in_command_mode": true,
-	"word_wrap": false,
-	"phpunit-sublime-terminal": "iTerm",
+	"word_wrap": false
 }
