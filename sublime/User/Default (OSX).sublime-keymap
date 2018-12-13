@@ -13,7 +13,11 @@
     { "keys": ["shift+f12"], "command": "goto_definition_scope" },
     { "keys": ["f7"], "command": "insert_php_constructor_property" },
 
-    // Simple PHPUnit
-    { "keys": [",", "p"], "command": "phpunit" },
-    { "keys": [",", "f"], "command": "phpunit_current_file" }
+    // Sublime PHPUnit by adamwathan
+    // https://github.com/adamwathan/sublime-phpunit
+    { "keys": ["alt+t"], "command": "run_phpunit_test" },
+    { "keys": ["super+alt+t"], "command": "run_single_phpunit_test" },
+    { "keys": ["super+alt+l+t"], "command": "run_last_phpunit_test" },
+    { "keys": ["super+shift+t"], "command": "run_phpunit_tests_in_dir" },
+    { "keys": ["super+shift+ctrl+t"], "command": "run_all_phpunit_tests" },
 ]
