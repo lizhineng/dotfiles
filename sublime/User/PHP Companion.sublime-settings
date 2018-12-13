@@ -1,4 +1,4 @@
 {
-    "use_sort_length": false,
-    "visibility": "private"
+    "use_sort_length": true,
+    "visibility": "protected"
 }
