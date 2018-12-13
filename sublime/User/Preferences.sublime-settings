@@ -1,7 +1,8 @@
 {
 	"always_show_minimap_viewport": true,
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
+	"color_scheme": "Packages/Inspired GitHub Color Scheme/InspiredGitHub.tmTheme",
+	"ensure_newline_at_eof_on_save": true,
 	"font_face": "Fira Code",
 	"font_options":
 	[
@@ -27,6 +28,7 @@
 	"show_panel_on_build": false,
 	"theme": "Default.sublime-theme",
 	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
 	"use_simple_full_screen": true,
 	"vintage_start_in_command_mode": true,
 	"word_wrap": false

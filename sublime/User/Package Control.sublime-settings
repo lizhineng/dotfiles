@@ -6,21 +6,12 @@
 	"installed_packages":
 	[
 		"AdvancedNewFile",
-		"Babel",
 		"DocBlockr",
-		"EditorConfig",
-		"Git",
-		"GitGutter",
-		"Laravel 5 Artisan",
+		"Inspired GitHub Color Scheme",
 		"Laravel Blade Highlighter",
-		"Material Theme",
-		"Origami",
 		"Package Control",
 		"PHP Companion",
-		"PhpDoc",
-		"Sass",
 		"SublimeLinter",
-		"SublimeLinter-php",
 		"Vue Syntax Highlight"
 	]
 }
