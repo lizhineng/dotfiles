@@ -1,9 +1,8 @@
 [
     // PHP Companion
-    { "keys": ["super+alt+enter"], "command": "expand_fqcn" },
-    { "keys": ["alt+enter"], "command": "find_use" },
-    { "keys": ["alt+shift+i"], "command": "import_namespace" },
-    { "keys": ["f7"], "command": "insert_php_constructor_property" },
+    { "keys": ["alt+e"], "command": "expand_fqcn" },
+    { "keys": ["alt+i"], "command": "find_use" },
+    { "keys": ["alt+c"], "command": "insert_php_constructor_property" },
 
     // Sublime PHPUnit by adamwathan
     // https://github.com/adamwathan/sublime-phpunit
