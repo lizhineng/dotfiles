@@ -12,6 +12,7 @@
 		"Package Control",
 		"PHP Companion",
 		"SublimeLinter",
+		"SublimeLinter-php",
 		"Vue Syntax Highlight"
 	]
 }
