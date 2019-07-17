@@ -1,7 +1,0 @@
-.vim/dein
-nvim/*
-!nvim/init.vim
-sublime/User/Package Control.cache
-sublime/User/Package Control.last-run
-sublime/User/Package Control.merged-ca-bundle
-sublime/User/oscrypto-ca-bundle.crt
