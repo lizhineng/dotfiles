@@ -107,4 +107,6 @@ alias preview="fzf --preview 'bat --color always {}'"
 alias top="sudo htop"
 alias help="tldr"
 
+alias dotfiles="cd $HOME/code/dotfiles"
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
