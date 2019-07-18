@@ -6,14 +6,17 @@
 	"installed_packages":
 	[
 		"AdvancedNewFile",
+		"All Autocomplete",
+		"Color Highlighter",
 		"DocBlockr",
-		"Inspired GitHub Color Scheme",
+		"Emmet",
+		"Expand Selection to Quotes",
 		"Laravel Blade Highlighter",
+		"MarkdownEditing",
 		"Package Control",
 		"PHP Companion",
-		"SnippetMaker",
-		"SublimeLinter",
-		"SublimeLinter-php",
+		"Sass",
+		"Theme - Primer",
 		"Vue Syntax Highlight"
 	]
 }

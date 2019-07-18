@@ -57,6 +57,8 @@ $(brew --prefix)/opt/fzf/install
 brew install htop
 brew install diff-so-fancy
 brew install tldr
+brew install fd
+brew install ncdu
 
 
 #
@@ -71,5 +73,7 @@ brew cask install tableplus
 brew cask install github-desktop
 brew cask isntall google-chrome
 brew cask install spotify
+brew cask install telegram
+brew cask install discord
 
 brew cleanup

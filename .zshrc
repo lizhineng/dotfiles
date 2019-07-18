@@ -106,6 +106,10 @@ alias ping="prettyping --nolegend"
 alias preview="fzf --preview 'bat --color always {}'"
 alias top="sudo htop"
 alias help="tldr"
+alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules --exclude vendor"
+
+alias cleandesk="defaults write com.apple.finder CreateDesktop false; killall Finder"
+alias messydesk="defaults write com.apple.finder CreateDesktop true; killall Finder"
 
 alias dotfiles="cd $HOME/code/dotfiles"
 

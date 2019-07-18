@@ -1,19 +1,19 @@
 {
-	"always_show_minimap_viewport": true,
-	"bold_folder_labels": true,
 	"caret_style": "phase",
-	"close_windows_when_empty": true,
-	"color_scheme": "Packages/Inspired GitHub Color Scheme/InspiredGitHub.tmTheme",
+	"color_scheme": "Packages/Theme - Primer/primer.light2.tmTheme",
+	"enable_tab_scrolling": false,
 	"ensure_newline_at_eof_on_save": true,
 	"font_face": "Fira Code",
 	"font_options":
 	[
-		"subpixel_antialias"
+		"subpixel_antkalias"
 	],
-	"font_size": 15,
-	"hot_exit": false,
+	"font_size": 16,
+	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
+		"Markdown",
+		"Vintage"
 	],
 	"indent_guide_options":
 	[
@@ -26,12 +26,13 @@
 	"margin": 0,
 	"overlay_scroll_bars": "enabled",
 	"phpunit-sublime-terminal": "iTerm",
-	"save_on_focus_lost": true,
-	"show_panel_on_build": false,
-	"theme": "Default.sublime-theme",
+	"rulers":
+	[
+		80,
+		120
+	],
+	"theme": "Primer.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"use_simple_full_screen": true,
-	"vintage_start_in_command_mode": true,
 	"word_wrap": false
 }
