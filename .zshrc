@@ -111,6 +111,8 @@ alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules --exclu
 alias cleandesk="defaults write com.apple.finder CreateDesktop false; killall Finder"
 alias messydesk="defaults write com.apple.finder CreateDesktop true; killall Finder"
 
+alias p="./vendor/bin/phpunit"
+
 alias dotfiles="cd $HOME/code/dotfiles"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
