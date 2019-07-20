@@ -6,8 +6,9 @@ brew update && brew upgrade
 # Install command line tools
 xcode-select --install
 
-brew install ruby
 brew install gnupg
+brew install pinentry-mac
+brew install ruby
 brew install vim
 brew install redis
 
