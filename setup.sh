@@ -14,6 +14,8 @@ composer global require laravel/installer
 composer global require laravel/valet
 valet install
 
+# Install PHP extensions with PECL
+pecl install imagick redis xdebug
 
 $(brew --prefix)/opt/fzf/install
 
