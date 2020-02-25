@@ -44,6 +44,10 @@ alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.ar
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
 
+# PHP
+# Force to reinstall all vendor packages completely
+alias cfresh="[[ -e composer.json ]] && rm -rf vendor/ composer.lock && composer i"
+
 # Laravel
 alias a="php artisan"
 alias ams="php artisan migrate:fresh --seed"
