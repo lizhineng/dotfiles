@@ -1,5 +1,6 @@
 # Taps
 tap "homebrew/cask"
+tap "homebrew/cask-fonts"
 
 # Better alternatives
 # https://remysharp.com/2018/08/23/cli-improved
@@ -52,6 +53,9 @@ cask "tableplus"
 # Design Tools
 cask "adobe-creative-cloud"
 cask "figma"
+
+# Fonts
+cask "font-fira-code"
 
 # Apps from App Store
 mas "Affinity Designer", id: 824171161
