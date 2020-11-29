@@ -32,6 +32,7 @@ brew "vim"
 # General
 cask "1password"
 cask "alfread"
+cask "anki"
 cask "discord"
 cask "firefox-developer-edition"
 cask "google-chrome-canary"
@@ -46,9 +47,10 @@ cask "docker"
 cask "github"
 cask "iterm2"
 cask "java"
-cask "phpstorm"
+cask "jetbrains-toolbox"
 cask "sublime-text"
 cask "tableplus"
+cask "wechatwebdevtools"
 
 # Design Tools
 cask "adobe-creative-cloud"
@@ -61,6 +63,7 @@ cask "font-fira-code"
 mas "Affinity Designer", id: 824171161
 mas "Affinity Photo", id: 824183456
 mas "Bear", id: 1091189122
+mas "Breaks For Eyes – Rest On Time", id: 1439431081
 mas "Numbers", id: 409203825
 mas "Outline", id: 1356178125
 mas "Pages", id: 409201541
