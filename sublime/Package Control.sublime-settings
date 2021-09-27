@@ -1,22 +1,13 @@
 {
-	"bootstrapped": true,
-	"in_process_packages":
-	[
-	],
-	"installed_packages":
-	[
-		"AdvancedNewFile",
-		"All Autocomplete",
-		"Color Highlighter",
-		"DocBlockr",
-		"Emmet",
-		"Expand Selection to Quotes",
-		"Laravel Blade Highlighter",
-		"MarkdownEditing",
-		"Package Control",
-		"PHP Companion",
-		"Sass",
-		"Theme - Primer",
-		"Vue Syntax Highlight"
-	]
+    "bootstrapped": true,
+    "in_process_packages":
+    [
+    ],
+    "installed_packages":
+    [
+        "AdvancedNewFile",
+        "GitHub Theme",
+        "Package Control",
+        "PHP Companion",
+    ],
 }
