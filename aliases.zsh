@@ -29,6 +29,8 @@ alias preview="fzf --preview 'bat --color always {}'"
 alias top="sudo htop"
 alias help="tldr"
 alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules --exclude vendor"
+alias l="exa -la"
+alias ll="exa -l"
 
 # Show/hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
