@@ -28,11 +28,11 @@ sudo nvram SystemAudioVolume=" "
 sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
 
 # Set language and text formats
-defaults write NSGlobalDomain AppleLanguages -array "en-US" "zh-Hans-US"
-defaults write NSGlobalDomain AppleLocale -string "en_US"
-defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
-defaults write NSGlobalDomain AppleMetricUnits -bool true
-defaults write NSGlobalDomain AppleTemperatureUnit -string "Celsius"
+defaults write -g AppleLanguages -array "en-US" "zh-Hans-US"
+defaults write -g AppleLocale -string "en_US"
+defaults write -g AppleMeasurementUnits -string "Centimeters"
+defaults write -g AppleMetricUnits -bool true
+defaults write -g AppleTemperatureUnit -string "Celsius"
 
 # Set the timezone; see `sudo systemsetup -listtimezones` for other values
 sudo systemsetup -settimezone "Asia/Hong_Kong" > /dev/null
@@ -93,7 +93,7 @@ defaults write com.apple.screencapture type -string "png"
 
 # Enable subpixel font rendering on non-Apple LCDs
 # Reference: https://github.com/kevinSuttle/macOS-Defaults/issues/17#issuecomment-266633501
-defaults write NSGlobalDomain AppleFontSmoothing -int 1
+defaults write -g AppleFontSmoothing -int 1
 
 # Enable HiDPI display modes (requires restart)
 sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
@@ -117,7 +117,7 @@ defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 
 # Finder: show all filename extensions
-defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+defaults write -g AppleShowAllExtensions -bool true
 
 # Finder: show status bar
 defaults write com.apple.finder ShowStatusBar -bool true
@@ -129,22 +129,22 @@ defaults write com.apple.finder ShowPathbar -bool true
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
 # Save to disk (not to iCloud) by default
-defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+defaults write -g NSDocumentSaveNewDocumentsToCloud -bool false
 
 # Display the auto-hidden document-proxy icon without delay
-defaults write NSGlobalDomain NSToolbarTitleViewRolloverDelay -float 0
+defaults write -g NSToolbarTitleViewRolloverDelay -float 0
 
 # Set sidebar icon size to medium
-defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2
+defaults write -g NSTableViewDefaultSizeMode -int 2
 
 # When performing a search, search the current folder by default
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
 # Enable spring loading for directories
-defaults write NSGlobalDomain com.apple.springing.enabled -bool true
+defaults write -g com.apple.springing.enabled -bool true
 
 # Remove the spring loading delay for directories
-defaults write NSGlobalDomain com.apple.springing.delay -float 0
+defaults write -g com.apple.springing.delay -float 0
 
 # Avoid creating .DS_Store files on network or USB volumes
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
@@ -177,14 +177,14 @@ sudo chflags nohidden /Volumes
 ###############################################################################
 
 # Use F1, F2, etc. keys as standard function keys
-defaults write NSGlobalDomain com.apple.keyboard.fnState -bool true
+defaults write -g com.apple.keyboard.fnState -bool true
 
 # Set a blazingly fast keyboard repeat rate
-defaults write NSGlobalDomain InitialKeyRepeat -int 15
-defaults write NSGlobalDomain KeyRepeat -int 2
+defaults write -g InitialKeyRepeat -int 15
+defaults write -g KeyRepeat -int 2
 
 # Disable auto-correct
-defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
 
 # Trackpad: Tap to click
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
@@ -282,7 +282,7 @@ defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool 
 defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true
 
 # Add a context menu item for showing the Web Inspector in web views
-defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
+defaults write -g WebKitDeveloperExtras -bool true
 
 # Enable continuous spellchecking
 defaults write com.apple.Safari WebContinuousSpellCheckingEnabled -bool true
