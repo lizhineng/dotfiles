@@ -384,6 +384,13 @@ defaults write com.apple.commerce AutoUpdateRestartRequired -bool true
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
 ###############################################################################
+# Notes                                                                       #
+###############################################################################
+
+# Make the text size bigger
+defaults write ~/Library/Containers/com.apple.Notes/Data/Library/Preferences/com.apple.Notes.plist ICMGlobalZoomFactorIndexKey -int 2
+
+###############################################################################
 # Reeder                                                                      #
 ###############################################################################
 
@@ -400,6 +407,7 @@ defaults write com.reederapp.5.macOS browser.open-links-in-default-browser -bool
 for app in "Activity Monitor" \
     "Dock" \
     "Finder" \
+    "Notes" \
     "Safari" \
     "SystemUIServer" \
     "Terminal"; do
