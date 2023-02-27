@@ -8,7 +8,7 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="minimal"
 
 # Custom configuration folder
-ZSH_CUSTOM=$DOTFILES
+ZSH_CUSTOM=$DOTFILES/zsh
 
 # Plugins to load
 plugins=(git)
