@@ -388,7 +388,7 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 ###############################################################################
 
 # Make the text size bigger
-defaults write ~/Library/Containers/com.apple.Notes/Data/Library/Preferences/com.apple.Notes.plist ICMGlobalZoomFactorIndexKey -int 2
+defaults write com.apple.Notes ICMGlobalZoomFactorIndexKey -int 2
 
 # Disable spelling check
 defaults write com.apple.Notes ShouldContinuouslyCheckSpelling -bool false
