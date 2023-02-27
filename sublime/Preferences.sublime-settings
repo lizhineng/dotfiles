@@ -1,5 +1,5 @@
 {
-    "color_scheme": "Packages/GitHub Theme/schemes/GitHub Light.sublime-color-scheme",
+    "color_scheme": "auto",
     "font_face": "Fira Code",
     "font_size": 16,
     "line_numbers": false,
@@ -11,7 +11,7 @@
     "line_padding_bottom": 16,
     "trim_trailing_white_space_on_save": "all",
     "ensure_newline_at_eof_on_save": true,
-    "theme": "GitHub Light.sublime-theme",
+    "theme": "GitHub Adaptive.sublime-theme",
     "show_tab_close_buttons": false,
     "hide_tab_scrolling_buttons": true,
     "hide_new_tab_button": true,
@@ -20,4 +20,6 @@
     "ignored_packages": [],
     "vintage_start_in_command_mode": true,
     "vintage_use_clipboard": true,
+    "dark_color_scheme": "GitHub Dark.sublime-color-scheme",
+    "light_color_scheme": "GitHub Light.sublime-color-scheme",
 }
