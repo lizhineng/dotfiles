@@ -1,7 +1,7 @@
 {
     "color_scheme": "auto",
     "font_face": "Fira Code",
-    "font_size": 16,
+    "font_size": 11,
     "line_numbers": false,
     "margin": 12,
     "fold_buttons": false,
@@ -26,4 +26,5 @@
     "dark_color_scheme": "GitHub Dark.sublime-color-scheme",
     "light_color_scheme": "GitHub Light.sublime-color-scheme",
     "draw_indent_guides": false,
+    "ui_scale": 1.5,
 }
