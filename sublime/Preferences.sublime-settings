@@ -6,7 +6,6 @@
     "margin": 12,
     "fold_buttons": false,
     "mini_diff": false,
-    "rulers": [80, 120],
     "translate_tabs_to_spaces": true,
     "word_wrap": false,
     "highlight_gutter": false,
@@ -26,4 +25,5 @@
     "vintage_use_clipboard": true,
     "dark_color_scheme": "GitHub Dark.sublime-color-scheme",
     "light_color_scheme": "GitHub Light.sublime-color-scheme",
+    "draw_indent_guides": false,
 }
