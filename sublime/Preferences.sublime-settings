@@ -20,7 +20,8 @@
     "hide_new_tab_button": true,
     "show_sidebar_button": false,
     "index_exclude_gitignore": false,
-    "ignored_packages": [],
+    "ignored_packages": [
+    ],
     "vintage_start_in_command_mode": true,
     "vintage_use_clipboard": true,
     "dark_color_scheme": "GitHub Dark.sublime-color-scheme",
