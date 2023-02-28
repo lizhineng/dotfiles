@@ -57,6 +57,7 @@ alias ams="php artisan migrate:fresh --seed"
 # PHPUnit
 alias p="./vendor/bin/phpunit"
 alias pf="./vendor/bin/phpunit --filter"
+alias px="./vendor/bin/phpunit --stop-on-fail --stop-on-error"
 
 # Javascript
 alias watch="npm run watch"
