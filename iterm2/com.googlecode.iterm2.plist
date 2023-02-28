@@ -972,7 +972,7 @@
 			<key>Window Type</key>
 			<integer>0</integer>
 			<key>Working Directory</key>
-			<string>/Users/lizhineng/code</string>
+			<string>~/code</string>
 		</dict>
 	</array>
 	<key>OpenArrangementAtStartup</key>
