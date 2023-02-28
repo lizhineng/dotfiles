@@ -20,8 +20,8 @@ sudo scutil --set HostName "Zhineng-Macbook"
 sudo scutil --set LocalHostName "Zhineng-Macbook"
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "Zhineng-Macbook"
 
-# Disable the sound effects on boot
-sudo nvram SystemAudioVolume=" "
+# Turn off the Mac startup sound
+sudo nvram StartupMute=%01
 
 # Reveal IP address, hostname, OS version, etc. when clicking the clock
 # in the login window
