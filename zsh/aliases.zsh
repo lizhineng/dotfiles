@@ -3,6 +3,7 @@ alias c="clear"
 alias v="vim"
 alias reloadcli="source $HOME/.zshrc"
 alias reloaddns="dscacheutil -flushcache && killall -HUP mDNSResponder"
+alias resetlaunchpad='defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock'
 
 # Directories
 alias dotfiles="cd $HOME/code/dotfiles"
