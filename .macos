@@ -41,6 +41,16 @@ defaults write -g AppleTemperatureUnit -string "Celsius"
 sudo systemsetup -settimezone "Asia/Hong_Kong" > /dev/null
 
 ###############################################################################
+# Siri                                                                        #
+###############################################################################
+
+# Turn off Siri
+defaults write com.apple.assistant.support "Assistant Enabled" -bool false
+
+# Hide Siri from status menu
+defaults write com.apple.Siri StatusMenuVisible -bool false
+
+###############################################################################
 # Energy saving                                                               #
 ###############################################################################
 
