@@ -14,11 +14,14 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # General UI/UX                                                               #
 ###############################################################################
 
-# Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "Zhineng Macbook"
-sudo scutil --set HostName "Zhineng-Macbook"
-sudo scutil --set LocalHostName "Zhineng-Macbook"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "Zhineng-Macbook"
+# Set user-friendly name for the system
+# sudo scutil --set ComputerName "Zhineng Macbook"
+
+# Set name associated with `hostname` and `gethostname`
+# sudo scutil --set HostName "zhineng-macbook"
+
+# Set local (Bonjour) Host name which can be accessed within local network
+# sudo scutil --set LocalHostName "zhineng-macbook"
 
 # Turn off the Mac startup sound
 sudo nvram StartupMute=%01
