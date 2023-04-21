@@ -10,7 +10,10 @@
         "Dockerfile Syntax Highlighting",
         "EditorConfig",
         "GitHub Theme",
+        "LSP",
+        "LSP-terraform",
         "Package Control",
         "PHP Companion",
+        "Terraform",
     ],
 }
