@@ -10,6 +10,7 @@
         "Dockerfile Syntax Highlighting",
         "EditorConfig",
         "GitHub Theme",
+        "INI",
         "LSP",
         "LSP-terraform",
         "Package Control",
