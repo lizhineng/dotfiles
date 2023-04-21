@@ -6,6 +6,7 @@
     "installed_packages":
     [
         "AdvancedNewFile",
+        "DocBlockr",
         "Dockerfile Syntax Highlighting",
         "GitHub Theme",
         "Package Control",
