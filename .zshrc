@@ -10,6 +10,9 @@ ZSH_THEME="minimal"
 # Custom configuration folder
 ZSH_CUSTOM=$DOTFILES/zsh
 
+# Disable all automatic updates
+zstyle ':omz:update' mode disabled
+
 # Plugins to load
 plugins=(git)
 

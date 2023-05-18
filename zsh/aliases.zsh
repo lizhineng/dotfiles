@@ -12,7 +12,7 @@ alias dt="cd ~/Desktop"
 
 # Keep system up-to-date
 # Apply updates for macOS, brew, composer and npm and their installed packages.
-alias update="sudo softwareupdate -ia; brew update; brew upgrade; brew cleanup; composer self-update; composer global update; npm install npm -g; npm update -g"
+alias update="sudo softwareupdate -ia; brew update; brew upgrade; brew cleanup; composer self-update; composer global update; npm install npm -g; npm update -g; omz update"
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
