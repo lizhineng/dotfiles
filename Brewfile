@@ -39,7 +39,6 @@ cask "google-chrome-canary"
 cask "google-drive-file-stream"
 cask "telegram"
 cask "tor-browser"
-cask "tweetbot"
 
 # Development
 cask "android-platform-tools"
