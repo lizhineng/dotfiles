@@ -18,7 +18,6 @@ brew "composer"
 brew "git"
 brew "gnupg"
 brew "imagemagick"
-brew "mas"
 brew "mysql"
 brew "nginx"
 brew "php"
@@ -53,14 +52,3 @@ cask "figma"
 
 # Fonts
 cask "font-fira-code"
-
-# Apps from App Store
-mas "Affinity Designer", id: 824171161
-mas "Affinity Photo", id: 824183456
-mas "Bear", id: 1091189122
-mas "Breaks For Eyes – Rest On Time", id: 1439431081
-mas "Numbers", id: 409203825
-mas "Outline", id: 1356178125
-mas "Pages", id: 409201541
-mas "Pixelmator Pro", id: 1289583905
-mas "Todoist", id: 585829637
