@@ -11,7 +11,6 @@ brew "fzf" # > ctrl+r
 brew "htop" # > top
 brew "ncdu" # > du
 brew "prettyping" # > ping
-brew "tldr" # > man, alias to `help`
 
 # Binaries
 brew "git"
