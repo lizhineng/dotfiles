@@ -25,7 +25,7 @@ brew "pinentry-mac"
 brew "pkg-config"
 brew "redis"
 brew "tree"
-brew "vim"
+brew "neovim"
 
 # General
 cask "keepassxc"
