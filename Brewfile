@@ -30,7 +30,7 @@ brew "tree"
 brew "vim"
 
 # General
-cask "1password"
+cask "keepassxc"
 cask "alfread"
 cask "anki"
 cask "discord"
