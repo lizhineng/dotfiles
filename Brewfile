@@ -30,13 +30,10 @@ brew "vim"
 # General
 cask "keepassxc"
 cask "raycast"
-cask "anki"
 cask "discord"
 cask "firefox-developer-edition"
 cask "google-chrome-canary"
-cask "google-drive-file-stream"
 cask "telegram"
-cask "tor-browser"
 
 # Development
 cask "docker"
