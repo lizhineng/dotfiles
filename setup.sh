@@ -19,6 +19,9 @@ valet install
 # Install PHP extensions with PECL
 pecl install imagick redis xdebug
 
+# Install Node version manager
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+
 $(brew --prefix)/opt/fzf/install
 
 brew cleanup
