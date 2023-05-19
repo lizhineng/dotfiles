@@ -36,7 +36,8 @@ cask "google-chrome-canary"
 cask "telegram"
 
 # Development
-cask "docker"
+brew "colima"
+brew "docker"
 cask "github"
 cask "iterm2"
 cask "jetbrains-toolbox"
