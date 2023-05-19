@@ -14,16 +14,16 @@ brew "prettyping" # > ping
 brew "tldr" # > man, alias to `help`
 
 # Binaries
-brew "composer"
 brew "git"
 brew "gnupg"
 brew "imagemagick"
+brew "pinentry-mac"
 brew "mysql"
+brew "redis"
 brew "nginx"
 brew "php"
-brew "pinentry-mac"
+brew "composer"
 brew "pkg-config"
-brew "redis"
 brew "tree"
 brew "neovim"
 
