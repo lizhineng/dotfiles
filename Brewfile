@@ -31,7 +31,7 @@ brew "vim"
 
 # General
 cask "keepassxc"
-cask "alfread"
+cask "raycast"
 cask "anki"
 cask "discord"
 cask "firefox-developer-edition"
