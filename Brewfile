@@ -40,11 +40,9 @@ cask "telegram"
 cask "tor-browser"
 
 # Development
-cask "android-platform-tools"
 cask "docker"
 cask "github"
 cask "iterm2"
-cask "java"
 cask "jetbrains-toolbox"
 cask "sublime-text"
 cask "tableplus"
