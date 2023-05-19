@@ -50,7 +50,6 @@ cask "java"
 cask "jetbrains-toolbox"
 cask "sublime-text"
 cask "tableplus"
-cask "wechatwebdevtools"
 
 # Design Tools
 cask "adobe-creative-cloud"
