@@ -50,3 +50,4 @@ cask "figma"
 
 # Fonts
 cask "font-fira-code"
+cask "font-fira-code-nerd-font"
