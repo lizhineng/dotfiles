@@ -1,6 +1,7 @@
 # Shortcuts
 alias c="clear"
-alias v="vim"
+alias v="nvim"
+alias vim="v"
 alias reloadcli="source $HOME/.zshrc"
 alias reloaddns="dscacheutil -flushcache && killall -HUP mDNSResponder"
 alias resetlaunchpad='defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock'
