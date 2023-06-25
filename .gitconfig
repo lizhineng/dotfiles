@@ -18,3 +18,5 @@
 	overview = log --all --oneline --no-merges
 	praise = blame
 	today = log --since=midnight --author='Li Zhineng' --oneline
+[init]
+	defaultBranch = main
