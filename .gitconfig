@@ -1,9 +1,9 @@
 [commit]
 	gpgsign = true
 [user]
-	signingkey = 041021B925AE5E37
 	name = Li Zhineng
 	email = im@zhineng.li
+	signingkey = DC255313C043DF7D
 [core]
 	pager = diff-so-fancy | less --tabs=1,5 -RFX
 	diff = diff-so-fancy | less --tabs=1,5 -RFX
