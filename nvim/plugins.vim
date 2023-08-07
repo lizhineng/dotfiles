@@ -1,7 +1,3 @@
-if &compatible
-  set nocompatible               " Be iMproved
-endif
-
 " Required:
 set runtimepath+=~/.dotfiles/.vim/dein/repos/github.com/Shougo/dein.vim
 
