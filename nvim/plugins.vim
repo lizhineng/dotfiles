@@ -24,7 +24,6 @@ if dein#load_state('~/.dotfiles/.vim/dein')
   call dein#add('Chiel92/vim-autoformat')
 
   " PHP
-  call dein#add('arnaud-lb/vim-php-namespace')
   call dein#add('tobyS/vmustache')
   call dein#add('tobyS/pdv')
 

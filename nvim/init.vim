@@ -155,23 +155,6 @@ autocmd FileType html,vue,css EmmetInstall
 
 " --------------- PHP Specific ---------------- "
 
-" Automatically types use statements
-" Import classes or functions (add use statements)
-function! IPhpInsertUse()
-    call PhpInsertUse()
-    call feedkeys('a',  'n')
-endfunction
-autocmd FileType php inoremap <Leader>n <Esc>:call IPhpInsertUse()<CR>
-autocmd FileType php noremap <Leader>n :call PhpInsertUse()<CR>
-
-" Make class or function names fully qualified
-function! IPhpExpandClass()
-    call PhpExpandClass()
-    call feedkeys('a', 'n')
-endfunction
-autocmd FileType php inoremap <Leader>nf <Esc>:call IPhpExpandClass()<CR>
-autocmd FileType php noremap <Leader>nf :call PhpExpandClass()<CR>
-
 " Automatic PSR-2 formatting
 autocmd FileType php nmap <leader>l :silent !php-cs-fixer fix "%" --rules=@PSR2<cr>
 
