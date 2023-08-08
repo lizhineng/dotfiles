@@ -14,7 +14,6 @@ if dein#load_state('~/.dotfiles/.vim/dein')
 
   " Common
   call dein#add('tpope/vim-vinegar')
-  call dein#add('scrooloose/nerdtree')
   call dein#add('ctrlpvim/ctrlp.vim')
   call dein#add('rking/ag.vim')
   call dein#add('skwp/greplace.vim')

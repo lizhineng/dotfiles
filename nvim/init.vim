@@ -123,12 +123,6 @@ nmap <D-r> :CtrlPBufTag<cr>
 nmap <D-e> :CtrlPMRUFiles<cr>
 
 " /
-" / NERDTree
-" /
-let NERDTreeHijackNetrw = 0
-nmap <D-1> :NERDTreeToggle<cr>
-
-" /
 " / Greplace.vim
 " /
 set grepprg=ag
