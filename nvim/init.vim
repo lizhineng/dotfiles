@@ -32,6 +32,9 @@ set expandtab
 set softtabstop=4
 set shiftwidth=4
 
+" Use system clipbaord
+set clipboard+=unnamedplus
+
 
 " ------------------ Visuals ------------------ "
 
