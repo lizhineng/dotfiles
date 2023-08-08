@@ -17,7 +17,6 @@ if dein#load_state('~/.dotfiles/.vim/dein')
   call dein#add('ctrlpvim/ctrlp.vim')
   call dein#add('rking/ag.vim')
   call dein#add('skwp/greplace.vim')
-  call dein#add('tpope/vim-surround')
   call dein#add('SirVer/ultisnips')
   call dein#add('editorconfig/editorconfig-vim')
 
