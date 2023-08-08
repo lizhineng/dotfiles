@@ -9,9 +9,6 @@ if dein#load_state('~/.dotfiles/.vim/dein')
   " Required:
   call dein#add('~/.dotfiles/.vim/dein/repos/github.com/Shougo/dein.vim')
 
-  " Themes
-  call dein#add('dracula/vim')
-
   " Common
   call dein#add('tpope/vim-vinegar')
   call dein#add('ctrlpvim/ctrlp.vim')

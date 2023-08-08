@@ -35,7 +35,6 @@ set shiftwidth=4
 
 " ------------------ Visuals ------------------ "
 
-colorscheme dracula
 set t_CO=256
 set guifont=Fira\ Code:h17
 set linespace=15
