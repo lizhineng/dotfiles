@@ -9,4 +9,11 @@ return {
     { "<leader>h", [[<cmd>lua require('telescope.builtin').oldfiles()<cr>]] },
     { "<leader>s", [[<cmd>lua require('telescope.builtin').lsp_document_symbols()<cr>]] },
   },
+  opts = {
+    pickers = {
+      oldfiles = {
+        cwd_only = true,
+      },
+    },
+  },
 }
