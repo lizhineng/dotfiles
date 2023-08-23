@@ -2,21 +2,21 @@ local HEIGHT_RATIO = 0.8  -- You can change this
 local WIDTH_RATIO = 0.5   -- You can change this too
 
 return {
-  "nvim-tree/nvim-tree.lua",
-  version = "*",
+  'nvim-tree/nvim-tree.lua',
+  version = '*',
   lazy = false,
   dependencies = {
-    "nvim-tree/nvim-web-devicons",
+    'nvim-tree/nvim-web-devicons',
   },
   keys = {
-    { "<leader><leader>", "<cmd>NvimTreeToggle<cr>" }
+    { '<leader><leader>', '<cmd>NvimTreeFindFileToggle<cr>' },
   },
   config = function()
-    require("nvim-tree").setup {
+    require('nvim-tree').setup {
       view = {
         float = {
           enable = true,
-          open_win_config = function()
+          open_win_config = function ()
             local screen_w = vim.opt.columns:get()
             local screen_h = vim.opt.lines:get() - vim.opt.cmdheight:get()
             local window_w = screen_w * WIDTH_RATIO
@@ -26,6 +26,7 @@ return {
             local center_x = (screen_w - window_w) / 2
             local center_y = ((vim.opt.lines:get() - window_h) / 2)
                              - vim.opt.cmdheight:get()
+
             return {
               border = 'rounded',
               relative = 'editor',
@@ -36,7 +37,7 @@ return {
             }
           end,
         },
-        width = function()
+        width = function ()
           return math.floor(vim.opt.columns:get() * WIDTH_RATIO)
         end,
       },
