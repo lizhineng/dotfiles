@@ -195,8 +195,12 @@ sudo chflags nohidden /Volumes
 # Use F1, F2, etc. keys as standard function keys
 defaults write -g com.apple.keyboard.fnState -bool true
 
-# Do nothing when pressing fn key
-defaults write com.apple.HIToolbox AppleFnUsageType -int 0
+# Configure fn key
+# 0: Do nothing
+# 1: Change input source
+# 2: Show Emoji & Symbols
+# 3: Start Dictation (Press twice)
+defaults write com.apple.HIToolbox AppleFnUsageType -int 1
 
 # Set a blazingly fast keyboard repeat rate
 defaults write -g InitialKeyRepeat -int 15
