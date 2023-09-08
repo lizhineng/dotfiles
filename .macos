@@ -247,18 +247,24 @@ defaults write com.apple.dock mru-spaces -bool false
 defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
 
 # Hot corners
-# Possible values:
-#  0: no-op
+# Possible corner values:
+#  1: None
 #  2: Mission Control
-#  3: Show application windows
+#  3: Application Windows
 #  4: Desktop
-#  5: Start screen saver
-#  6: Disable screen saver
-#  7: Dashboard
-# 10: Put display to sleep
+#  5: Start Screen Saver
+#  6: Disable Screen Saver
+# 10: Put Display to Sleep
 # 11: Launchpad
 # 12: Notification Center
 # 13: Lock Screen
+# 14: Quick Note
+# Possible modifier keys which could be combined by adding the values:
+#    None: 0
+#   Shift: 2^17 = 131072
+# Control: 2^18 = 262144
+#  Option: 2^19 = 524288
+# Command: 2^20 = 1048576
 # Top left screen corner → Mission Control
 defaults write com.apple.dock wvous-tl-corner -int 2
 defaults write com.apple.dock wvous-tl-modifier -int 0
