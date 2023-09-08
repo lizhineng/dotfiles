@@ -40,6 +40,9 @@ defaults write -g AppleTemperatureUnit -string "Celsius"
 # Set the timezone; see `sudo systemsetup -listtimezones` for other values
 sudo systemsetup -settimezone "Asia/Hong_Kong" > /dev/null
 
+# Don't reveal desktop when clicking wallpaper
+defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -bool false
+
 ###############################################################################
 # Siri                                                                        #
 ###############################################################################
