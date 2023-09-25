@@ -30,6 +30,8 @@ return {
       capabilities = capabilities
     }
 
+    lspconfig.terraformls.setup { capabilities = capabilities }
+
     -- Global mappings.
     -- See `:help vim.diagnostic.*` for documentation on any of the below functions
     vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float)
