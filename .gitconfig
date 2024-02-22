@@ -1,7 +1,7 @@
 [user]
 	name = Li Zhineng
 	email = im@zhineng.li
-	signingkey = DC255313C043DF7D
+	signingkey = 5561E9684B5242E7!
 [commit]
 	gpgsign = true
 [core]
