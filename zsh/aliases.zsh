@@ -51,6 +51,7 @@ alias path='echo -e ${PATH//:/\\n}'
 # PHP
 # Force to reinstall all vendor packages completely
 alias cfresh="[[ -e composer.json ]] && rm -rf vendor/ composer.lock && composer i"
+alias t="composer test"
 
 # Laravel
 alias a="php artisan"
