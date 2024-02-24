@@ -13,7 +13,7 @@ return {
       adapters = {
         require('neotest-pest')({
           sail_enabled = function ()
-            return False
+            return false
           end
         })
       }
