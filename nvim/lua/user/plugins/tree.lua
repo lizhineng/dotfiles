@@ -46,6 +46,7 @@ return {
     require('nvim-tree').setup {
       on_attach = tree_attach,
       view = {
+        centralize_selection = true,
         float = {
           enable = true,
           open_win_config = function ()
