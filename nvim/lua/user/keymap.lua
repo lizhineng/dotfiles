@@ -18,6 +18,9 @@ map('n', '<Leader>ev', ':tabedit $MYVIMRC<cr>')
 -- Toggle the display of line number
 map('n', '<c-n>', ':set number!<cr>')
 
+-- Clear the highlighting with escape key
+map('n', '<Esc>', ':nohl<CR>')
+
 -- Easy switching windows
 map('n', '<C-j>', '<C-w><C-j>')
 map('n', '<C-k>', '<C-w><C-k>')
