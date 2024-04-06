@@ -9,8 +9,10 @@ return {
     require'nvim-treesitter.configs'.setup {
       ensure_installed = { 'lua', 'php', 'phpdoc' },
       highlight = {
-        enable = true,
-        additional_vim_regex_highlighting = true
+        enable = true
+      },
+      indent = {
+        enable = true
       }
     }
   end
