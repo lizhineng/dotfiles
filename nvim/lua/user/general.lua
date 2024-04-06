@@ -7,6 +7,17 @@ vim.opt.softtabstop = 4
 
 vim.opt.smartindent = true
 
+-- Tree-sitter based folding
+vim.opt.foldmethod = 'expr'
+vim.opt.foldexpr = 'nvim_treesitter#foldexpr()'
+vim.opt.foldenable = false
+vim.opt.fillchars = {
+  fold = ' ',
+  foldopen = '',
+  foldclose = '',
+  foldsep = ' '
+}
+
 vim.opt.wrap = false
 
 vim.opt.title = true
