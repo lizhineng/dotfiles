@@ -5,13 +5,13 @@ return {
   event = { 'BufReadPost', 'BufNewFile' },
   cmd = { 'TSUpdateSync' },
   config = function()
-    require('nvim-treesitter.configs').setup({
-      ensure_installed = 'all',
-      sync_install = false,
+    ---@diagnostic disable-next-line: missing-fields
+    require'nvim-treesitter.configs'.setup {
+      ensure_installed = { 'lua', 'php', 'phpdoc' },
       highlight = {
         enable = true,
         additional_vim_regex_highlighting = true
       }
-    })
+    }
   end
 }
