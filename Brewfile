@@ -11,6 +11,7 @@ brew "fzf" # > ctrl+r
 brew "htop" # > top
 brew "ncdu" # > du
 brew "prettyping" # > ping
+brew "eza" # > ls
 
 # Binaries
 brew "git"
