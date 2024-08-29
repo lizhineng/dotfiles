@@ -45,7 +45,9 @@ return {
           mappings = {
             i = {
               ['<C-k>'] = lga.quote_prompt(),
-              ['<C-i>'] = lga.quote_prompt({ postfix = ' --iglob ' })
+              ['<C-i>'] = lga.quote_prompt({ postfix = ' --iglob ' }),
+              ['<C-n>'] = actions.cycle_history_next,
+              ['<C-p>'] = actions.cycle_history_prev,
             }
           }
         }
