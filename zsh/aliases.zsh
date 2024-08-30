@@ -65,3 +65,4 @@ alias px="./vendor/bin/phpunit --stop-on-fail --stop-on-error"
 
 # Javascript
 alias watch="npm run watch"
+alias nfresh="[[ -e package.json ]] && rm -rf node_modules/ && npm i"
