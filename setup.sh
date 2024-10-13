@@ -41,6 +41,6 @@ if [ ! -d "$HOME/.config/karabiner" ]; then
     ln -s "$DOTFILES/karabiner" "$HOME/.config/karabiner"
 fi
 
-if [ ! -d "$HOME/Library/Application\ Support/Sublime\ Text/Packages/User" ]; then
-    ln -s "$DOTFILES/sublime" "~/Library/Application\ Support/Sublime\ Text/Packages/User"
+if [ ! -d "$HOME/Library/Application Support/Sublime Text/Packages/User" ]; then
+    ln -s "$DOTFILES/sublime" "$HOME/Library/Application Support/Sublime Text/Packages/User"
 fi
