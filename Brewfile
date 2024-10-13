@@ -34,6 +34,7 @@ cask "discord"
 cask "firefox-developer-edition"
 cask "google-chrome-canary"
 cask "telegram"
+cask "karabiner-elements"
 
 # Development
 brew "colima"

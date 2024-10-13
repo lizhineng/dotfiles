@@ -1,5 +1,15 @@
 #!/usr/bin/env bash
 
+# Define the dotfiles directory
+DOTFILES="${DOTFILES:=$HOME/.dotfiles}"
+
+# Clone the repository if needed
+if [ ! -d "$DOTFILES" ]; then
+    git clone git@github.com:lizhineng/dotfiles.git $DOTFILES
+fi
+
+cd $DOTFILES
+
 # Install Brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
@@ -25,3 +35,8 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 $(brew --prefix)/opt/fzf/install
 
 brew cleanup
+
+# Link configuration directories
+if [ ! -d "$HOME/.config/karabiner" ]; then
+    ln -s "$DOTFILES/karabiner" "$HOME/.config/karabiner"
+fi
