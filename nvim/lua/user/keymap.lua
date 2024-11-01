@@ -26,9 +26,17 @@ map('n', '<C-j>', '<C-w><C-j>')
 map('n', '<C-k>', '<C-w><C-k>')
 map('n', '<C-h>', '<C-w><C-h>')
 map('n', '<C-l>', '<C-w><C-l>')
+map('t', '<C-j>', '<C-\\><C-n><C-w><C-j>')
+map('t', '<C-k>', '<C-\\><C-n><C-w><C-k>')
+map('t', '<C-h>', '<C-\\><C-n><C-w><C-h>')
+map('t', '<C-l>', '<C-\\><C-n><C-w><C-l>')
 
 -- Quick switch between buffers
 map('n', '[b', ':bprevious<cr>')
 map('n', ']b', ':bnext<cr>')
 map('n', '[B', ':bfirst<cr>')
 map('n', ']B', ':blast<cr>')
+
+-- Open a terminal in a split
+map('n', '<Leader>st', ':split | terminal<CR>')
+map('n', '<Leader>vst', ':vsplit | terminal<CR>')
