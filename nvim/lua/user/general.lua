@@ -48,3 +48,9 @@ vim.opt.backup = true
 
 -- keep backups out of the current directory
 vim.opt.backupdir:remove('.')
+
+-- Enter insert mode when opening or switching back to a terminal
+vim.api.nvim_create_autocmd({ 'TermOpen', 'BufEnter' }, {
+  pattern = 'term://*',
+  command = 'startinsert'
+})
