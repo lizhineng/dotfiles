@@ -36,3 +36,7 @@ map('n', '[b', ':bprevious<cr>')
 map('n', ']b', ':bnext<cr>')
 map('n', '[B', ':bfirst<cr>')
 map('n', ']B', ':blast<cr>')
+
+-- Open a terminal in a split
+map('n', '<Leader>st', ':split | terminal<CR>')
+map('n', '<Leader>vst', ':vsplit | terminal<CR>')
