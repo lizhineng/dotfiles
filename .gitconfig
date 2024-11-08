@@ -18,6 +18,6 @@
 	overview = log --all --oneline --no-merges
 	praise = blame
 	today = log --since=midnight --author='Li Zhineng' --oneline
-	cleanup = !git branch --merged | grep -Ev \"(^\\*|^\\s{2}(main|master|develop))\" | xargs git branch -d
+	cleanup = !git branch --merged | grep -Ev \"(^\\*|^\\+|^\\s{2}(main|master|develop))\" | xargs git branch -d
 [init]
 	defaultBranch = main
