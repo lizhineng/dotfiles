@@ -36,7 +36,11 @@ $(brew --prefix)/opt/fzf/install
 
 brew cleanup
 
-# Link configuration directories
+# Link configurations
+if [ ! -f ~/.aliasrc ]; then
+    ln -s "$DOTFILES/.aliasrc" "$HOME/.aliasrc"
+fi
+
 if [ ! -d "$HOME/.config/karabiner" ]; then
     ln -s "$DOTFILES/karabiner" "$HOME/.config/karabiner"
 fi

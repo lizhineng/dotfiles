@@ -31,8 +31,10 @@ setopt HIST_NO_STORE
 # Change directory without explicit "cd" command
 setopt AUTO_CD
 
-# Include additional zsh configurations
-\. "$DOTFILES/zsh/aliases.zsh"
+# Set up aliases to save some keystrokes
+if [[ -r ~/.aliasrc ]]; then
+    . ~/.aliasrc
+fi
 
 # Start up Node version manager
 export NVM_DIR="$HOME/.nvm"
