@@ -4,6 +4,11 @@ export DOTFILES=$HOME/.dotfiles
 # Specify a locale
 export LANG=en_US.UTF-8
 
+# Prompt
+autoload -U colors && colors
+PS1="%{${fg[green]}%}%#%{$reset_color%} "
+RPS1='%~'
+
 # Persist history permanently
 HISTSIZE=10000
 SAVEHIST=10000
