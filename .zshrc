@@ -28,6 +28,9 @@ setopt HIST_IGNORE_SPACE
 # Do not save history for "history" command
 setopt HIST_NO_STORE
 
+# Change directory without explicit "cd" command
+setopt AUTO_CD
+
 # Include additional zsh configurations
 \. "$DOTFILES/zsh/aliases.zsh"
 \. "$DOTFILES/zsh/path.zsh"
