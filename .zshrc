@@ -33,9 +33,13 @@ setopt AUTO_CD
 
 # Include additional zsh configurations
 \. "$DOTFILES/zsh/aliases.zsh"
-\. "$DOTFILES/zsh/path.zsh"
 
 # Start up Node version manager
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
+# PHP dependency manager
+if [[ -d $HOME/.composer/vendor/bin ]]; then
+    export PATH="$HOME/.composer/vendor/bin:$PATH"
+fi
