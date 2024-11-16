@@ -41,10 +41,16 @@ if [[ -r ~/.aliasrc ]]; then
     . ~/.aliasrc
 fi
 
-# Start up Node version manager
+# Node version manager
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+if [[ -d "$NVM_DIR" ]]; then
+    NODE_VERSIONS=("$NVM_DIR"/versions/node/*)
+    if (( ${#NODE_VERSIONS[@]} > 0 )); then
+        PATH="${NODE_VERSIONS[$((${#NODE_VERSIONS[@]}))]}/bin:$PATH"
+    fi
+    [ -s "$NVM_DIR/nvm.sh" ] && nvm() { . "$NVM_DIR/nvm.sh"; nvm "$@"; }
+    [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
+fi
 
 # PHP dependency manager
 if [[ -d $HOME/.composer/vendor/bin ]]; then
