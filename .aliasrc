@@ -65,6 +65,7 @@ alias grm='git rm'
 alias gf='git fetch -p'
 alias gpull='git pull'
 alias gpush='git push'
+gc:() { git commit -m "$*" }
 
 # PHP
 # Force to reinstall all vendor packages completely
