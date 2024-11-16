@@ -65,6 +65,9 @@ alias gf='git fetch -p'
 alias gpull='git pull'
 alias gpush='git push'
 alias gdm="git branch --merged | grep -Ev \"(^\\*|^\\+|^\\s{2}(main|master|develop))\" | xargs git branch -d"
+alias gb='git branch'
+alias gco='git checkout'
+alias gcb='git checkout -b'
 gc:() { git commit -m "$*" }
 
 # PHP
