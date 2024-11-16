@@ -37,6 +37,10 @@ $(brew --prefix)/opt/fzf/install
 brew cleanup
 
 # Link configurations
+if [ ! -f ~/.zshrc ]; then
+    ln -s "$DOTFILES/.zshrc" "$HOME/.zshrc"
+fi
+
 if [ ! -f ~/.aliasrc ]; then
     ln -s "$DOTFILES/.aliasrc" "$HOME/.aliasrc"
 fi
