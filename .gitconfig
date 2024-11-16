@@ -18,6 +18,7 @@
 	overview = log --all --oneline --no-merges
 	praise = blame
 	today = log --since=midnight --author='Li Zhineng' --oneline
+	recent = log --pretty=\"%C(Yellow)%h%C(reset)  %ad %<(14,trunc)%C(Green)%cr%C(reset)  %C(Cyan)%an:%C(reset) %s\" --date=short -20
 	cleanup = !git branch --merged | grep -Ev \"(^\\*|^\\+|^\\s{2}(main|master|develop))\" | xargs git branch -d
 [init]
 	defaultBranch = main
