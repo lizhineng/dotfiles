@@ -6,6 +6,7 @@
 dump.rdb
 .tern-port
 .netrwhist
+Brewfile.lock.json
 
 # PHP
 .phpactor.json
