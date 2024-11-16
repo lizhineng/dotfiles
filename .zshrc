@@ -12,7 +12,7 @@ RPS1='%~'
 HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.history
-HISTORY_IGNORE='(clear|ls|pwd|exit|uptime)*'
+HISTORY_IGNORE='(clear|ls|pwd|exit|uptime|cat)*'
 
 # Record history in real time
 setopt INC_APPEND_HISTORY
