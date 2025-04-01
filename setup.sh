@@ -45,6 +45,10 @@ if [ ! -f ~/.aliasrc ]; then
     ln -s "$DOTFILES/.aliasrc" "$HOME/.aliasrc"
 fi
 
+if [ ! -f ~/.extrarc ]; then
+    ln -s "$DOTFILES/zsh/.extrarc" "$HOME/.extrarc"
+fi
+
 if [ ! -d "$HOME/.config/karabiner" ]; then
     ln -s "$DOTFILES/karabiner" "$HOME/.config/karabiner"
 fi
