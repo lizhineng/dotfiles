@@ -40,6 +40,11 @@ if [[ -r ~/.aliasrc ]]; then
     . ~/.aliasrc
 fi
 
+# Set up additional configurations if necessarily
+if [[ -r ~/.extrarc ]]; then
+    . ~/.extrarc
+fi
+
 # Node version manager
 export NVM_DIR="$HOME/.nvm"
 if [[ -d "$NVM_DIR" ]]; then
