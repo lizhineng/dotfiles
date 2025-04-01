@@ -38,11 +38,11 @@ brew cleanup
 
 # Link configurations
 if [ ! -f ~/.zshrc ]; then
-    ln -s "$DOTFILES/.zshrc" "$HOME/.zshrc"
+    ln -s "$DOTFILES/zsh/.zshrc" "$HOME/.zshrc"
 fi
 
 if [ ! -f ~/.aliasrc ]; then
-    ln -s "$DOTFILES/.aliasrc" "$HOME/.aliasrc"
+    ln -s "$DOTFILES/zsh/.aliasrc" "$HOME/.aliasrc"
 fi
 
 if [ ! -f ~/.extrarc ]; then
