@@ -46,6 +46,7 @@ if [ ! -f ~/.aliasrc ]; then
 fi
 
 if [ ! -f ~/.extrarc ]; then
+    touch "$DOTFILES/zsh/.extrarc"
     ln -s "$DOTFILES/zsh/.extrarc" "$HOME/.extrarc"
 fi
 
