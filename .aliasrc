@@ -11,6 +11,7 @@ alias tf="terraform"
 alias dotfiles="cd $HOME/code/dotfiles"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
+mkcd() { mkdir -p "$@" && cd $_ }
 
 # Keep system up-to-date
 # Apply updates for macOS, brew, composer and npm and their installed packages.
