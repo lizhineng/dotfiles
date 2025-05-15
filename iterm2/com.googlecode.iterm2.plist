@@ -389,6 +389,10 @@
 	<integer>524288</integer>
 	<key>MinimalTabStyleOutlineStrength</key>
 	<real>0.0</real>
+	<key>NeverWarnAboutShortLivedSessions_87C1AB7B-5035-4396-81C4-A6F82F51BD4A</key>
+	<true/>
+	<key>NeverWarnAboutShortLivedSessions_87C1AB7B-5035-4396-81C4-A6F82F51BD4A_selection</key>
+	<integer>0</integer>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
