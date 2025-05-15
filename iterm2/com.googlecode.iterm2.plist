@@ -1182,6 +1182,8 @@
 	<true/>
 	<key>PromptOnQuit</key>
 	<false/>
+	<key>RequireAuthenticationAfterScreenLocks</key>
+	<true/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>StretchTabsToFillBar</key>
